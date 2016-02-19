@@ -13,7 +13,7 @@
     <input type="submit" name="go" id="go" value="Buscar Cursos"/>
     <p>
     </p>
-    <input type="submit" name="go" id="go" value="Ver Cursos"/>
+    <input type="submit" name="go" id="go" value="Ver Cursos     "/>
 
 </form>
 </div>
