@@ -25,10 +25,10 @@
             <label for="NomCurso">Nombre Curso</label>
             <input type="text" name="NomCurso" id="NomCurso"/>
         </p>
-        <p>
+        <!--<p>
             <label for="NumAula">N° Aula</label>
             <input type="text" name="NumAula" id="NumAula"/>
-        </p>
+        </p>-->
     </div>
     <p class="p-container">
 
