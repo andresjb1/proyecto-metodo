@@ -5,7 +5,7 @@
     <link href="diseno/style.css" rel="stylesheet">
 </head>
 <body>
-<?php $ejemplo = 'Ulatina San Pedro, Dennis' ?>
+<?php $ejemplo = 'Ulatina San Pedro, Dennis loca' ?>
 <?php echo $ejemplo ?>
 
 <h1>Ulatina</h1>
