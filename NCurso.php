@@ -4,7 +4,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="diseno/HSNCurso.css" />
+    <link rel="stylesheet" type="text/css" href="diseno/HSGeneral.css" />
 </head>
 <body>
 <div class="formOpciones">
@@ -44,9 +44,3 @@
 </body>
 </html>
 
-/*
- * Created by PhpStorm.
- * User: PCDRivera
- * Date: 19/02/2016
- * Time: 12:06
- */

@@ -11,11 +11,11 @@
     <h1>Universidad Latina</h1>
 </form>
 <form>
-    <h1>Agregar Estudiante</h1>
+    <h1>Agregar Profesor</h1>
     <div class="NewClass">
         <p>
-            <label for="NomEstudiante">Nombre Estudiante</label>
-            <input type="text" name="NomEstudiante" id="NomEstudiante"/>
+            <label for="NomProfesor">Nombre Profesor</label>
+            <input type="text" name="NomProfesor" id="NomProfesor"/>
         </p>
         <p>
             <label for="NumCarnet">Carnet</label>
@@ -25,14 +25,14 @@
             <label for="NomCurso">Nombre Curso</label>
             <input type="text" name="NomCurso" id="NomCurso"/>
         </p>
-       <!-- <p>
+        <p>
             <label for="NumAula">N° Aula</label>
             <input type="text" name="NumAula" id="NumAula"/>
-        </p>-->
+        </p>
     </div>
     <p class="p-container">
 
-        <input type="submit" name="go" id="go" value="Agregar Estudiante"/>
+        <input type="submit" name="go" id="go" value="Agregar Profesor"/>
     </p>
 
 </form>
