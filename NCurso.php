@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="diseno/HSNCurso.css" />
 </head>
 <body>
+<div class="formOpciones">
+<form id="formOpciones" runat="server">
+    <h3></h3>
+    <input type="submit" name="go" id="go" value="Buscar Cursos"/>
+
+</form>
+</div>
 <form id="form1" runat="server">
     <h1>Universidad Latina</h1>
 </form>

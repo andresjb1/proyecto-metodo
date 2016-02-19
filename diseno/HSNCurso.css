@@ -6,7 +6,9 @@ body {
     font-size:12px;
     background:#333 ;
 }
-
+.formOpciones{
+    float: left;
+}
 /*Fondo del panel*/
 form {
     background: #538944;
@@ -17,6 +19,9 @@ form {
     overflow:hidden;
     position:relative;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.formOpciones{
+    align-self: auto;
 }
 
 form:after {
