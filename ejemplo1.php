@@ -8,7 +8,7 @@
 <?php $ejemplo = 'Ulatina San Pedro' ?>
 <?php echo $ejemplo ?>
 
-
+<h1>Ulatina</h1>
     <form class="form-horizontal">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
