@@ -6,8 +6,10 @@ body {
     font-size:12px;
     background:#333 ;
 }
-.formOpciones{
+#formOpciones{
     float: left;
+    width: auto;
+
 }
 /*Fondo del panel*/
 form {
