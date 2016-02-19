@@ -4,8 +4,6 @@
     <link href="diseno/HSLogin.css" rel="stylesheet">
 </head>
 <body>
-<?php $ejemplo = 'Ulatina San Pedro, Dennis' ?>
-<?php echo $ejemplo ?>
 
 <form>
     <h1>Universidad Latina</h1>
@@ -21,7 +19,6 @@
 
     </div>
     <p class="p-container">
-
         <input type="submit" name="go" id="go" value="Log in"/>
     </p>
 </form>
