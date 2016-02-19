@@ -7,15 +7,16 @@ body {
     background:#333 ;
 }
 
+/*Fondo del panel*/
 form {
-    background: #408945;
+    background: #538944;
     width:300px;
     margin:30px auto;
     border-radius:0.4em;
-    border:1px solid #191919;
+    border:1px solid #ffffff;
     overflow:hidden;
     position:relative;
-    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 form:after {
@@ -25,7 +26,7 @@ form:after {
     height:1px;
     width:100px;
     left:20%;
-    background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+    background:linear-gradient(left, #000000, #444, #b6b6b8, #444, #111);
     top:0;
 }
 
@@ -45,13 +46,13 @@ form:before {
     padding:20px;
     border-top:1px solid #19191a;
 }*/
-
+/*Fondo*/
 form h1 {
     font-size:18px;
-    text-shadow:0 1px 0 black;
+    text-shadow:0 1px 0 #ffffff;
     text-align:center;
     padding:15px 0;
-    border-bottom:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(255, 255, 255);
     position:relative;
 }
 
@@ -72,7 +73,7 @@ form h1:after {
 }
 
 label {
-    color:#666;
+    color: #ffffff;
     display:block;
     padding-bottom:9px;
 }
@@ -81,8 +82,8 @@ input[type=text],
 input[type=password] {
     width:100%;
     padding:8px 5px;
-    background:linear-gradient(#1f2124, #27292c);
-    border:1px solid #222;
+    background:linear-gradient(#9a9ca3, #585858);
+    border:1px solid #9a9ca3;
     box-shadow:
             0 1px 0 rgba(255,255,255,0.1);
     border-radius:0.3em;
@@ -110,7 +111,7 @@ input[type=submit] {
             inset 0 1px 0 rgba(255,255,255,0.3),
             inset 0 10px 10px rgba(255,255,255,0.1);
     border-radius:0.3em;
-    background:#0184ff;
+    background: #60615c;
     color:white;
     float:right;
     font-weight:bold;
@@ -128,5 +129,5 @@ input[type=text]:hover,
 input[type=password]:hover,
 label:hover ~ input[type=text],
 label:hover ~ input[type=password] {
-    background:#27292c;
+    background: #9a9ca3;
 }
