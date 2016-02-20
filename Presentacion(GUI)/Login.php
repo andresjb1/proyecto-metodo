@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <title>Ejemplo</title>
-    <link href="../diseno/HSGeneral.css" rel="stylesheet">
+    <link href="Styles/HSGeneral.css" rel="stylesheet">
 </head>
 <body>
 
