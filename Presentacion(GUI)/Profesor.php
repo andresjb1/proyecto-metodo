@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="diseno/HSGeneral.css" />
+    <link rel="stylesheet" type="text/css" href="../diseno/HSGeneral.css" />
 </head>
 <body>
 <form id="form1" runat="server">
     <h1>Universidad Latina</h1>
 </form>
 <form>
-    <h1>Agregar Estudiante</h1>
+    <h1>Agregar Profesor</h1>
     <div class="NewClass">
         <p>
-            <label for="NomEstudiante">Nombre Estudiante</label>
-            <input type="text" name="NomEstudiante" id="NomEstudiante"/>
+            <label for="NomProfesor">Nombre Profesor</label>
+            <input type="text" name="NomProfesor" id="NomProfesor"/>
         </p>
         <p>
             <label for="NumCarnet">Carnet</label>
@@ -24,14 +25,14 @@
             <label for="NomCurso">Nombre Curso</label>
             <input type="text" name="NomCurso" id="NomCurso"/>
         </p>
-        <!-- <p>
-             <label for="NumAula">N° Aula</label>
-             <input type="text" name="NumAula" id="NumAula"/>
-         </p>-->
+        <!--<p>
+            <label for="NumAula">N° Aula</label>
+            <input type="text" name="NumAula" id="NumAula"/>
+        </p>-->
     </div>
     <p class="p-container">
 
-        <input type="submit" name="go" id="go" value="Agregar Estudiante"/>
+        <input type="submit" name="go" id="go" value="Agregar Profesor"/>
     </p>
 
 </form>
