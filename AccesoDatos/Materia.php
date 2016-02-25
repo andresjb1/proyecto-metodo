@@ -5,4 +5,11 @@
  * Date: 24/02/2016
  * Time: 23:20
  */
-class Materia 
+class materia {}
+echo 'Nombre';
+$a=0; 'codigo de materia';
+
+
+
+
+
