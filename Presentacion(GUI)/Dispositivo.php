@@ -8,7 +8,7 @@
 </head>
 <body>
 <form id="form1" runat="server">
-    <h1>Universidad Latina  Be</h1>
+    <h1>Universidad Latina</h1>
 </form>
 <form>
     <h1>Agregar Dispositivo</h1>

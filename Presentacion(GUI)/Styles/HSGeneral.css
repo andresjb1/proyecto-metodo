@@ -131,3 +131,23 @@ label:hover ~ input[type=text],
 label:hover ~ input[type=password] {
     background: #9a9ca3;
 }
+
+#div_logo
+{
+    width:auto;
+    height: 100px;
+    background-color: white;
+}
+
+#img_logo
+{
+    width:90%;
+    height: auto;
+    margin: 5% 5% 5% 5%;
+}
+
+.second-cont
+{
+    padding-left: 3%;
+    padding-right: 3%;
+}
