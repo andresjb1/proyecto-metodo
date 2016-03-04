@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form>
+<form action="../Negocio/Acceso.php" method="get" name="frmLogin">
     <div id="div_logo">
     <img id="img_logo" src="IMG/logo_ulatina.png"/>
     </div>
@@ -13,7 +13,7 @@
     <div class="inset">
         <div class="second-cont">
         <p>
-            <label for="email">Carnet</label>
+            <label for="email">Correo</label>
             <input type="text" name="email" id="email"/>
         </p>
         <p>
