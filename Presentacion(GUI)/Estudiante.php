@@ -4,6 +4,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Estudiante</title>
+    <link rel="shortcut icon" href="IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
 </head>
 <body>

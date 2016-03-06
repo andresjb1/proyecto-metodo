@@ -7,7 +7,9 @@ header nav {
     width:100%;
 
     margin:0px auto;
-    background:#024959;
+    background:#538944;
+    //background:#024959;277A1D
+
 }
 
 .menu_bar {
@@ -35,7 +37,9 @@ header nav ul li span {
 }
 
 header nav ul li a:hover {
-    background: #037E8C;
+    background: #277A1D;
+    //background: #037E8C;
+
 }
 
 section {
@@ -78,7 +82,7 @@ section {
     .menu_bar .bt-menu {
         display: block; /*Para poder poner los margenes internos*/
         padding: 15px;
-        background: #025059;
+        background: #538944;
         color: white;
         text-decoration: none;
         font-weight: bold;

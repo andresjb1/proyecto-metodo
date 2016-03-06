@@ -2,6 +2,7 @@
 <head>
     <title>Login</title>
     <link href="Styles/HSGeneral.css" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/favicon.png"/>
 </head>
 <body>
 <div id="container-center">
