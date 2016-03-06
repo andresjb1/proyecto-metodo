@@ -12,10 +12,15 @@
 
 <header>
     <div class="menu_bar">
-        <a href="#" class="bt-menu"><span class="icon-list"></span>Menu</a>
+
+        <a href="#" class="bt-menu"><img id="logo_menu" src="IMG/logo-latina-2015.png"/>
+        <span class="icon-list"></span>
+        </a>
     </div>
     <nav>
+
         <ul>
+            <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
             <li><a href="#"><span class="icon-house"></span> Inicio</a></li>
             <li><a href="#"><span class="icon-suitcase"></span> Prestamos</a></li>
             <li><a href="#"><span class="icon-rocket"></span> Registros</a></li>

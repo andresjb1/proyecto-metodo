@@ -4,7 +4,7 @@
     <link href="Styles/HSGeneral.css" rel="stylesheet">
 </head>
 <body>
-
+<div id="container-center">
 <form action="../Negocio/Acceso.php" method="get" name="frmLogin">
     <div id="div_logo">
     <img id="img_logo" src="IMG/logo_ulatina.png"/>
@@ -25,8 +25,8 @@
     <p class="p-container">
         <input type="submit" name="go" id="go" value="Log in"/>
     </p>
-    <input type="text" name="" id="logError"/>
 </form>
+</div>
 
 </body>
 </html>

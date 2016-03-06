@@ -19,7 +19,7 @@ else
 
     if($email == "admin" and $password == "1234")
     {
-        echo "ingrensando al sistema...";
+        header('Location: ../Presentacion(GUI)/Home.php');
     }
     else
     {
