@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>Ejemplo</title>
+    <title>Login</title>
     <link href="Styles/HSGeneral.css" rel="stylesheet">
 </head>
 <body>
@@ -25,6 +25,7 @@
     <p class="p-container">
         <input type="submit" name="go" id="go" value="Log in"/>
     </p>
+    <input type="text" name="" id="logError"/>
 </form>
 
 </body>
