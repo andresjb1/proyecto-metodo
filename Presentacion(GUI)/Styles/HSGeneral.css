@@ -156,3 +156,20 @@ label:hover ~ input[type=password] {
 {
     margin-top:100px;
 }
+#content {
+    width: 450px;
+}
+
+#close {
+    float: right;
+    font-weight: bold;
+    color: red;
+}
+
+#element {
+    margin: 0px auto;
+    min-height: 100px;
+    width: 450px;
+    box-shadow: 0 2px 5px #666666;
+    padding: 10px;
+}

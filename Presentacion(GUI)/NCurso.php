@@ -7,14 +7,37 @@
     <link rel="shortcut icon" href="IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
 </head>
+
+<script type="text/javascript">
+    function muestra_oculta(id){
+        if (document.getElementById){ //se obtiene el id
+            var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+            el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+        }
+    }
+    window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+        muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+    }
+
+</script>
+
+
+
+
 <body>
 <div class="formOpciones">
-<form id="formOpciones" runat="server">
-    <h3></h3>
-    <input type="submit" name="go" id="go" value="Buscar Cursos"/>
-    <input type="submit" name="go" id="go" value="Ver Cursos     "/>
 
-</form>
+
+    <div id="contenido_a_mostrar">
+
+        <input type="submit" name="go" id="go" value="Buscar Cursos"/>
+        <input type="submit" name="go" id="go" value="Ver Cursos     "/>
+
+    </div>
+
+
+    <p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
+
 </div>
 <form id="form1" runat="server">
     <h1>Universidad Latina</h1>

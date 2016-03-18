@@ -1,5 +1,5 @@
 <?php
 
 $config = [
-    'url' => 'http://localhost:8081/proyecto/'
+    'url' => 'http://localhost:8080/proyecto/'
 ];
