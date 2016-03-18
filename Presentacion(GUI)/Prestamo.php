@@ -22,8 +22,10 @@
 
         <ul>
             <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
-
-            <li><a href="#"><span class="icon-suitcase"></span> Prestamos</a></li>
+            <li><a href="Home.php"><span class="icon-house"></span> Home</a></li>
+            <li><a href="#"><span class="icon-suitcase"></span> Solicitar prestamo</a></li>
+            <li><a href="#"><span class="icon-rocket"></span> Dispositivos disponibles</a></li>
+            <li><a href="#"><span class="icon-mail"></span> Ayuda</a></li>
 
         </ul>
     </nav>
