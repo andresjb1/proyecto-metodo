@@ -1,8 +1,3 @@
-<?php
-
-include '../Negocio/config.php';
-?>
-
 <html lang="en">
 <head>
     <title>Login</title>
@@ -11,7 +6,7 @@ include '../Negocio/config.php';
 </head>
 <body>
 <div id="container-center">
-<form action="<?php echo "{$config['url']}/Negocio/Acceso.php" ?>" method="get" name="frmLogin">
+    <form action="../Negocio/Acceso.php" method="get" name="frmLogin">
     <div id="div_logo">
     <img id="img_logo" src="IMG/logo_ulatina.png"/>
     </div>
