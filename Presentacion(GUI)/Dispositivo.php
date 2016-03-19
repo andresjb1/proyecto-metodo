@@ -25,10 +25,14 @@
 <div id="contenido_a_mostrar">
 
     <input type="submit" name="go" id="go" value="Ver Dispositivos"/>
-    <input type="submit" name="go" id="go" value="Estudiantes "/>
+    <a href="Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
+    <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
+    <a href="NCurso.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
+    <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 
 </div>
 <p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
+
 <form id="form1" runat="server">
     <h1>Universidad Latina</h1>
 </form>

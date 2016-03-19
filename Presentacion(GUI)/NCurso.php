@@ -30,8 +30,12 @@
 
     <div id="contenido_a_mostrar">
 
-        <input type="submit" name="go" id="go" value="Buscar Cursos"/>
+
         <input type="submit" name="go" id="go" value="Ver Cursos     "/>
+        <a href="Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
+        <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
+        <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Profesores   "   /></a>
+        <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 
     </div>
 

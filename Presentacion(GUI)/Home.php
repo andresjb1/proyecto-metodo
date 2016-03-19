@@ -22,9 +22,10 @@
         <ul>
             <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
             <li><a href="#"><span class="icon-house"></span> Home</a></li>
-            <li><a href="Prestamo.php"><span class="icon-suitcase"></span> Solicitar prestamo</a></li>
-            <li><a href="#"><span class="icon-rocket"></span> Dispositivos disponibles</a></li>
-            <li><a href="#"><span class="icon-mail"></span> Ayuda</a></li>
+            <li><a href="Dispositivo.php"><span class="icon-suitcase"></span> Dispositivo</a></li>
+            <li><a href="Estudiante.php"><span class="icon-rocket"></span> Estudiante</a></li>
+            <li><a href="NCurso.php"><span class="icon-mail"></span> Curso</a></li>
+            <li><a href="Profesor.php.php"><span class="icon-mail"></span> Profesor</a></li>
         </ul>
     </nav>
 </header>

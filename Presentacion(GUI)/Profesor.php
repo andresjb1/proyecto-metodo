@@ -17,15 +17,18 @@
         muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
     }
 
+
 </script>
 <body>
 
 
 <div id="contenido_a_mostrar">
 
-    <input type="submit" name="go" id="go" value="Ver Profesores"/>
-    <input type="submit" name="go" id="go" value=" Estudiantes    "/>
-
+   <input type="submit" name="go" id="go" value="Ver Profesores"  />
+   <a href="Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
+   <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
+   <a href="NCurso.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
+   <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 </div>
 <p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
 <form id="form1" runat="server">
