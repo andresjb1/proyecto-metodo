@@ -21,11 +21,9 @@
     <nav>
         <ul>
             <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
-            <li><a href="#"><span class="icon-house"></span> Home</a></li>
-            <li><a href="Dispositivo.php"><span class="icon-suitcase"></span> Dispositivo</a></li>
-            <li><a href="Estudiante.php"><span class="icon-rocket"></span> Estudiante</a></li>
-            <li><a href="NCurso.php"><span class="icon-mail"></span> Curso</a></li>
-            <li><a href="Profesor.php.php"><span class="icon-mail"></span> Profesor</a></li>
+            <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
+            <li><a href="Dispositivo.php"><span class="icon-add-to-list"></span> Solicitar Dispositivo</a></li>
+            <li><a href="Admin/Estudiante.php"><span class="icon-list"></span> Dispositivos Disponibles</a></li>
         </ul>
     </nav>
 </header>

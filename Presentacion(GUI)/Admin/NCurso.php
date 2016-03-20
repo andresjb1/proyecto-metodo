@@ -4,8 +4,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Cursos</title>
-    <link rel="shortcut icon" href="IMG/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
+    <link rel="shortcut icon" href="../IMG/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
 </head>
 
 <script type="text/javascript">
@@ -33,9 +33,9 @@
 
         <input type="submit" name="go" id="go" value="Ver Cursos     "/>
         <a href="Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
-        <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
+        <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
         <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Profesores   "   /></a>
-        <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
+        <a href="../Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 
     </div>
 

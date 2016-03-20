@@ -4,8 +4,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Profesor</title>
-    <link rel="shortcut icon" href="IMG/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
+    <link rel="shortcut icon" href="../IMG/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
 </head><script type="text/javascript">
     function muestra_oculta(id){
         if (document.getElementById){ //se obtiene el id
@@ -26,9 +26,9 @@
 
    <input type="submit" name="go" id="go" value="Ver Profesores"  />
    <a href="Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
-   <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
+   <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
    <a href="NCurso.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
-   <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
+   <a href="../Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 </div>
 <p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
 <form id="form1" runat="server">
