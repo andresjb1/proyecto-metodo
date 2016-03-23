@@ -173,3 +173,9 @@ label:hover ~ input[type=password] {
     box-shadow: 0 2px 5px #666666;
     padding: 10px;
 }
+
+.container-center-A
+{
+    width: 32%;
+    margin: auto;
+}
