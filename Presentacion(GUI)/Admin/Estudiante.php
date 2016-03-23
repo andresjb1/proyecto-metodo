@@ -32,11 +32,11 @@
     <nav>
         <ul>
             <img id="logo_menu_max" src="../IMG/logo-latina-2015.png"/>
-            <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
+            <li><a href="HomeAdm.php"><span class="icon-home"></span> Inicio</a></li>
             <li><a href="Mantenimiento.php"><span class="icon-tools"></span> Mantenimiento Dispositivos</a></li>
-            <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
+            <li><a href="#"><span class="icon-add-user"></span> Estudiantes</a></li>
             <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
-            <li><a href="#"><span class="icon-add-to-list"></span> Aulas</a></li>
+            <li><a href="Aula.php"><span class="icon-add-to-list"></span> Aulas</a></li>
         </ul>
     </nav>
 </header>
@@ -47,7 +47,7 @@
     <input type="submit" name="go" id="go" value="Eliminar"/>
     <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Buscar  "   /></a>
     <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Modificar  "   /></a>
-    <a href="NCurso.php"> <input type="submit" name="go" id="go" value=" Agregar   "   /></a>
+    <a href="Aula.php"> <input type="submit" name="go" id="go" value=" Agregar   "   /></a>
 </div>
 </div>
 
@@ -78,8 +78,8 @@
 
         <input type="submit" name="go" id="go" value="Agregar Estudiante"/>
     </p>
-
 </form>
+
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>

@@ -25,7 +25,7 @@
             <li><a href="Mantenimiento.php"><span class="icon-tools"></span> Mantenimiento Dispositivos</a></li>
             <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
             <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
-            <li><a href="#"><span class="icon-add-to-list"></span> Aulas</a></li>
+            <li><a href="Aula.php"><span class="icon-add-to-list"></span> Aulas</a></li>
         </ul>
     </nav>
 </header>

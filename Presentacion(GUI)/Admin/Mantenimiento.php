@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
     <link rel="stylesheet" href="../Styles/Menu.css"/>
 </head>
+<script type="text/javascript">
+    function muestra_oculta(id){
+        if (document.getElementById){ //se obtiene el id
+            var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+            el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+        }
+    }
+    window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+        muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+    }
+
+
+</script>
 <body>
 
 <header>
@@ -24,20 +37,41 @@
             <li><a href="HomeAdm.php"><span class="icon-home"></span> Inicio</a></li>
             <li><a href="#"><span class="icon-tools"></span> Mantenimiento Dispositivos</a></li>
             <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
-            <li><a href="Profesor.php><span class="icon-add-user"></span> Profesores</a></li>
-            <li><a href="#"><span class="icon-add-to-list"></span> Aulas</a></li>
+            <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
+            <li><a href="Aula.php"><span class="icon-add-to-list"></span> Aulas</a></li>
         </ul>
     </nav>
 </header>
-<section>
-    <div class="MenuAdmin">
-        <ul>
-            <li><a href="#">Agregar dispositivo</a></li>
-            <li><a href="#">Modificar dispositivo</a></li>
-            <li><a href="#">Eliminar dispositivo</a></li>
-        </ul>
+</br></br>
+<div class="container-center-A">
+    <div id="contenido_a_mostrar">
+        <input type="submit" name="go" id="go" value="Eliminar"/>
+        <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Buscar  "   /></a>
+        <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Modificar  "   /></a>
+        <a href="Aula.php"> <input type="submit" name="go" id="go" value=" Agregar   "   /></a>
     </div>
-</section>
+</div>
+
+<p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">&nbsp;&nbsp;&nbsp;&nbsp;
+        M&aacute;s Opciones&nbsp;<span class="icon-plus"></span></a></p>
+</br></br>
+<form>
+    <h1>Agregar Dispositivo</h1>
+    <div class="NewClass">
+        <p>
+            <label for="Codigo">Codigo</label>
+            <input type="text" name="codigo" id="codigo"/>
+        </p>
+        <p>
+            <label for="nombreDispo">Nombre</label>
+            <input type="text" name="nombreDispo" id="nombreDispo"/>
+        </p>
+    </div>
+    <p class="p-container">
+
+        <input type="submit" name="go" id="go" value="Agregar Dispositivo"/>
+    </p>
+</form>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>

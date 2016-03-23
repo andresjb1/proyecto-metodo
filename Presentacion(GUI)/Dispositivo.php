@@ -27,7 +27,7 @@
     <input type="submit" name="go" id="go" value="Ver Dispositivos"/>
     <a href="Admin/Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
     <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
-    <a href="Admin/NCurso.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
+    <a href="Admin/Aula.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
     <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
 
 </div>

@@ -3,12 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Profesor</title>
+    <title>Cursos</title>
     <link rel="shortcut icon" href="../IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
     <link rel="stylesheet" href="../Styles/Menu.css"/>
-</head><script type="text/javascript">
+</head>
+
+<script type="text/javascript">
     function muestra_oculta(id){
         if (document.getElementById){ //se obtiene el id
             var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
@@ -19,8 +21,11 @@
         muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
     }
 
-
 </script>
+
+
+
+
 <body>
 <header>
     <div class="menu_bar">
@@ -35,8 +40,8 @@
             <li><a href="HomeAdm.php"><span class="icon-home"></span> Inicio</a></li>
             <li><a href="Mantenimiento.php"><span class="icon-tools"></span> Mantenimiento Dispositivos</a></li>
             <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
-            <li><a href="#"><span class="icon-add-user"></span> Profesores</a></li>
-            <li><a href="Aula.php"><span class="icon-add-to-list"></span> Aulas</a></li>
+            <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
+            <li><a href="#"><span class="icon-add-to-list"></span> Aulas</a></li>
         </ul>
     </nav>
 </header>
@@ -55,28 +60,28 @@
         M&aacute;s Opciones&nbsp;<span class="icon-plus"></span></a></p>
 </br></br>
 <form>
-    <h1>Agregar Profesor</h1>
+    <h1>Agregar Aula</h1>
     <div class="NewClass">
         <p>
-            <label for="NomProfesor">Nombre Profesor</label>
-            <input type="text" name="NomProfesor" id="NomProfesor"/>
-        </p>
-        <p>
-            <label for="NumCarnet">Carnet</label>
-            <input type="text" name="NumCarnet" id="NumCarnet"/>
-        </p>
-        <p>
-            <label for="NomCurso">Nombre Curso</label>
-            <input type="text" name="NomCurso" id="NomCurso"/>
-        </p>
-        <!--<p>
-            <label for="NumAula">N° Aula</label>
+            <label for="NumAula">Numero Aula</label>
             <input type="text" name="NumAula" id="NumAula"/>
-        </p>-->
+        </p>
+        <p>
+            <label for="edificio">Edificio</label>
+            <input type="text" name="edificio" id="edificio"/>
+        </p>
+        <p>
+            <label for="Capacidad">Capacidad</label>
+            <input type="text" name="capacidad" id="capacidad"/>
+        </p>
+        <!-- <p>
+             <label for="NumAula">N° Aula</label>
+             <input type="text" name="NumAula" id="NumAula"/>
+         </p>-->
     </div>
     <p class="p-container">
 
-        <input type="submit" name="go" id="go" value="Agregar Profesor"/>
+        <input type="submit" name="go" id="go" value="Agregar Aula"/>
     </p>
 </form>
 
@@ -84,3 +89,4 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>
 </html>
+
