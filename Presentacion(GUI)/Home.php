@@ -1,3 +1,14 @@
+<?php
+SESSION_START();
+$user=$_SESSION['s_user'];
+$pass=$_SESSION['s_password'];
+if($user == null OR $pass == null)
+{
+    header('Location: Login.php');
+}
+echo "usuario:$user</br>";
+echo "Pass:$pass";
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -23,7 +34,8 @@
             <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
             <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
             <li><a href="Dispositivo.php"><span class="icon-add-to-list"></span> Solicitar Dispositivo</a></li>
-            <li><a href="Admin/Estudiante.php"><span class="icon-list"></span> Dispositivos Disponibles</a></li>
+            <li><a href="#"><span class="icon-list"></span> Dispositivos Disponibles</a></li>
+            <li><a href="../Negocio/Cierre.php"><span class="icon-tag"></span> Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>

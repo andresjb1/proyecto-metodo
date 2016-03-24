@@ -1,3 +1,14 @@
+<?php
+SESSION_START();
+$user=$_SESSION['s_user'];
+$pass=$_SESSION['s_password'];
+if($user == null OR $pass == null)
+{
+    header('Location: Login.php');
+}
+echo "usuario:$user</br>";
+echo "Pass:$pass";
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,7 +37,7 @@
             <li><a href="#"><span class="icon-suitcase"></span> Solicitar prestamo</a></li>
             <li><a href="#"><span class="icon-rocket"></span> Dispositivos disponibles</a></li>
             <li><a href="#"><span class="icon-mail"></span> Ayuda</a></li>
-
+            <li><a href="../Negocio/Cierre.php"><span class="icon-tag"></span> Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>

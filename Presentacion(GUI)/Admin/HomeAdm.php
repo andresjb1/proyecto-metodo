@@ -1,3 +1,14 @@
+<?php
+    SESSION_START();
+    $user=$_SESSION['s_user'];
+    $pass=$_SESSION['s_password'];
+    if($user == null OR $pass == null)
+    {
+        header('Location: ../Login.php');
+    }
+    echo "usuario:$user</br>";
+    echo "Pass:$pass";
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,6 +37,7 @@
             <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
             <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
             <li><a href="Aula.php"><span class="icon-add-to-list"></span> Aulas</a></li>
+            <li><a href="../../Negocio/Cierre.php"><span class="icon-tag"></span> Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>

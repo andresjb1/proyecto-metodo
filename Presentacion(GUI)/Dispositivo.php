@@ -1,11 +1,24 @@
+<?php
+SESSION_START();
+$user=$_SESSION['s_user'];
+$pass=$_SESSION['s_password'];
+if($user == null OR $pass == null)
+{
+    header('Location: Login.php');
+}
+echo "usuario:$user</br>";
+echo "Pass:$pass";
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>dispositivo</title>
+    <title>Solicitudes</title>
     <link rel="shortcut icon" href="IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
+    <link rel="stylesheet" href="Styles/Fonts.css"/>
+    <link rel="stylesheet" href="Styles/Menu.css"/>
 </head>
 <script type="text/javascript">
     function muestra_oculta(id){
@@ -20,24 +33,38 @@
 
 </script>
 <body>
+<header>
+    <div class="menu_bar">
 
+        <a href="#" class="bt-menu"><img id="logo_menu" src="IMG/logo-latina-2015.png"/>
+            <span class="icon-list"></span>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <img id="logo_menu_max" src="IMG/logo-latina-2015.png"/>
+            <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
+            <li><a href="Dispositivo.php"><span class="icon-add-to-list"></span> Solicitar Dispositivo</a></li>
+            <li><a href="#"><span class="icon-list"></span> Dispositivos Disponibles</a></li>
+            <li><a href="../Negocio/Cierre.php"><span class="icon-tag"></span> Cerrar sesión</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div id="contenido_a_mostrar">
-
-    <input type="submit" name="go" id="go" value="Ver Dispositivos"/>
-    <a href="Admin/Estudiante.php"> <input type="submit" name="go" id="go" value=" Estudiantes   "   /></a>
-    <a href="Dispositivo.php"> <input type="submit" name="go" id="go" value=" Dispositivos   "   /></a>
-    <a href="Admin/Aula.php"> <input type="submit" name="go" id="go" value=" Cursos   "   /></a>
-    <a href="Home.php"> <input type="submit" name="go" id="go" value=" Inicio   "   /></a>
-
+</br></br>
+<div class="container-center-A">
+    <div id="contenido_a_mostrar">
+        <input type="submit" name="go" id="go" value="Eliminar"/>
+        <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Buscar  "   /></a>
+        <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Modificar  "   /></a>
+        <a href="Aula.php"> <input type="submit" name="go" id="go" value=" Agregar   "   /></a>
+    </div>
 </div>
 <p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
 
 <form id="form1" runat="server">
-    <h1>Universidad Latina</h1>
-</form>
 <form>
-    <h1>Agregar Dispositivo</h1>
+    <h1>Solicitar Dispositivo</h1>
     <div class="NewClass">
         <p>
             <label for="NomDispositivo">Dispositivo</label>
@@ -50,9 +77,11 @@
     </div>
     <p class="p-container">
 
-        <input type="submit" name="go" id="go" value="Agregar Dispositivo"/>
+        <input type="submit" name="go" id="go" value="Solicitar Dispositivo"/>
     </p>
 
 </form>
 </body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="JS/menuScript.js"></script>
 </html>
