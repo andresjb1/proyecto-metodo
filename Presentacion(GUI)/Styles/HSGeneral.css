@@ -8,18 +8,17 @@ body {
 }
 
 /*Fondo del panel*/
-form {
+.formulario-1 {
     background: #538944;
-    width:300px;
-    margin:30px auto;
+    width:312px;
+    margin:3px auto;
     border-radius:0.4em;
     border:1px solid #ffffff;
     overflow:hidden;
-    position:relative;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-form:after {
+.formulario-1:after {
     content:"";
     display:block;
     position:absolute;
@@ -30,7 +29,7 @@ form:after {
     top:0;
 }
 
-form:before {
+.formulario-1:before {
     content:"";
     display:block;
     position:absolute;
@@ -47,7 +46,7 @@ form:before {
     border-top:1px solid #19191a;
 }*/
 /*Fondo*/
-form h1 {
+.formulario-1 h1 {
     font-size:18px;
     text-shadow:0 1px 0 #ffffff;
     text-align:center;
@@ -56,7 +55,7 @@ form h1 {
     position:relative;
 }
 
-form h1:after {
+.formulario-1 h1:after {
     content:"";
     display:block;
     width:250px;
@@ -72,14 +71,19 @@ form h1:after {
 
 }
 
-label {
+.label-1 {
     color: #ffffff;
     display:block;
     padding-bottom:9px;
 }
 
-input[type=text],
-input[type=password] {
+.label-2 {
+    color: #ffffff;
+    padding-bottom:9px;
+}
+
+.input-1[type=text],
+.input-1[type=password] {
     width:100%;
     padding:8px 5px;
     background:linear-gradient(#9a9ca3, #585858);
@@ -90,10 +94,13 @@ input[type=password] {
     margin-bottom:20px;
 }
 
-
+.input-2
+{
+    border-radius:0.3em;
+}
 
 .p-container {
-    padding:0 20px 20px 20px;
+    padding:10px 10px 10px 10px;
 }
 
 .p-container:after {
@@ -103,7 +110,7 @@ input[type=password] {
 }
 
 
-input[type=submit] {
+.input-1[type=submit] {
     padding:5px 20px;
     border:1px solid rgba(0,0,0,0.4);
     text-shadow:0 -1px 0 rgba(0,0,0,0.4);
@@ -113,22 +120,21 @@ input[type=submit] {
     border-radius:0.3em;
     background: #60615c;
     color:white;
-    float:right;
     font-weight:bold;
     cursor:pointer;
     font-size:13px;
 }
 
-input[type=submit]:hover {
+.input-1[type=submit]:hover {
     box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.3),
             inset 0 -10px 10px rgba(255,255,255,0.1);
 }
 
-input[type=text]:hover,
-input[type=password]:hover,
-label:hover ~ input[type=text],
-label:hover ~ input[type=password] {
+.input-1[type=text]:hover,
+.input-1[type=password]:hover,
+.input-1:hover ~ input[type=text],
+.input-1:hover ~ input[type=password] {
     background: #9a9ca3;
 }
 
@@ -176,6 +182,5 @@ label:hover ~ input[type=password] {
 
 .container-center-A
 {
-    width: 32%;
-    margin: auto;
+    text-align: center;
 }
