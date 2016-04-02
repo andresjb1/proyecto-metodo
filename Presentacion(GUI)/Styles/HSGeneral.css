@@ -184,3 +184,22 @@ body {
 {
     text-align: center;
 }
+
+@media screen and (max-width:400px)
+{
+    .formulario-1 {
+        background: #538944;
+        width:250px;
+        margin:3px auto;
+        border-radius:0.4em;
+        border:1px solid #ffffff;
+        overflow:hidden;
+        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container-center-A
+    {
+        text-align: center;
+        padding: 5px 5px 5px 5px;
+    }
+}
