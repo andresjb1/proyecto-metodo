@@ -20,18 +20,7 @@ echo "Pass:$pass";
     <link rel="stylesheet" href="Styles/Fonts.css"/>
     <link rel="stylesheet" href="Styles/Menu.css"/>
 </head>
-<script type="text/javascript">
-    function muestra_oculta(id){
-        if (document.getElementById){ //se obtiene el id
-            var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
-            el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
-        }
-    }
-    window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-        muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
-    }
 
-</script>
 <body>
 <header>
     <div class="menu_bar">
@@ -52,35 +41,27 @@ echo "Pass:$pass";
 </header>
 
 </br></br>
-<div class="container-center-A">
-    <div id="contenido_a_mostrar">
-        <input type="submit" name="go" id="go" value="Eliminar"/>
-        <a href="Profesor.php"> <input type="submit" name="go" id="go" value=" Buscar  "   /></a>
-        <a href="../Dispositivo.php"> <input type="submit" name="go" id="go" value=" Modificar  "   /></a>
-        <a href="Aula.php"> <input type="submit" name="go" id="go" value=" Agregar   "   /></a>
-    </div>
-</div>
-<p><a style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar')" title="">Mas Opciones </a></p>
 
-<form id="form1" runat="server">
-<form>
+<form class="formulario-1" runat="server">
+    <div class="p-container">
     <h1>Solicitar Dispositivo</h1>
     <div class="NewClass">
         <p>
-            <label for="NomDispositivo">Dispositivo</label>
-            <input type="text" name="NomDispositivo" id="NomDispositivo"/>
+            <label class="label-1" for="NomDispositivo">Dispositivo</label>
+            <input class="input-1" type="text" name="NomDispositivo" id="NomDispositivo"/>
         </p>
         <p>
-            <label for="NumAula">Aula</label>
-            <input type="text" name="NumAula" id="NumAula"/>
+            <label class="label-1" for="NumAula">Aula</label>
+            <input class="input-1" type="text" name="NumAula" id="NumAula"/>
         </p>
     </div>
     <p class="p-container">
 
-        <input type="submit" name="go" id="go" value="Solicitar Dispositivo"/>
+        <input class="input-1" type="submit" name="go" id="go" value="Solicitar Dispositivo"/>
     </p>
-
+    </div>
 </form>
+
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="JS/menuScript.js"></script>

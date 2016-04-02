@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="container-center">
-    <form action="../Negocio/Acceso.php" method="post" name="frmLogin">
+    <form action="../Negocio/Acceso.php" method="get" name="frmLogin">
     <div id="div_logo">
     <img id="img_logo" src="IMG/logo_ulatina.png"/>
     </div>
