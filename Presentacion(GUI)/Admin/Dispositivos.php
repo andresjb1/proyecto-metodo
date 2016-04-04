@@ -14,8 +14,7 @@ if($user == null OR $pass == null)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Estudiante</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="../IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
@@ -45,29 +44,23 @@ if($user == null OR $pass == null)
 </header>
 </br>
 <div class="wrapper">
-    <h1 class="head-1">Estudiantes</h1>
-
+    <h1 class="head-1">Dispositivos</h1>
     <form class="formulario-2">
-        <input class="input-2" type="text" name="numCarnet" id="numCarnet"/>
-        <input class="input-1" type="submit" name="go" id="go" value="Buscar por carnet"/>
+        <input class="input-2" type="text" name="NumAula" id="NumAula"/>
+        <input class="input-1" type="submit" name="go" id="go" value="Busqueda por número"/>
         <input class="input-1" type="submit" name="go" id="go" value="Busqueda avanzada"/>
     </form>
-
-    <br/></br>
+    <br/><br/>
     <form class="formulario-1">
         <h1>Datos</h1>
         <div class="p-container">
             <p>
-                <label class="label-1" for="NumCarnet">Carnet</label>
-                <input class="input-1" type="text" name="NumCarnet" id="NumCarnet"/>
+                <label class="label-1" for="Codigo">Codigo</label>
+                <input class="input-1" type="text" name="codigo" id="codigo"/>
             </p>
             <p>
-                <label class="label-1" for="NomEstudiante">Nombre Estudiante</label>
-                <input class="input-1" type="text" name="NomEstudiante" id="NomEstudiante"/>
-            </p>
-            <p>
-                <label class="label-1" for="NumAula">N° Aula</label>
-                <input class="input-1" type="text" name="NumAula" id="NumAula"/>
+                <label class="label-1"for="nombreDispo">Nombre</label>
+                <input class="input-1" type="text" name="nombreDispo" id="nombreDispo"/>
             </p>
         </div>
     </form>
@@ -77,7 +70,8 @@ if($user == null OR $pass == null)
         <input class="input-1" type="submit" name="go" id="go" value="Editar"   />
         <input class="input-1" type="submit" name="go" id="go" value="Eliminar"/>
     </div>
-</div><!-- wrapper -->
+
+</div>
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>

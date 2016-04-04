@@ -6,8 +6,8 @@ if($user == null OR $pass == null)
 {
     header('Location: ../Login.php');
 }
-echo "usuario:$user</br>";
-echo "Pass:$pass";
+//echo "usuario:$user</br>";
+//echo "Pass:$pass";
 ?>
 <!DOCTYPE html>
 
@@ -19,6 +19,7 @@ echo "Pass:$pass";
     <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
     <link rel="stylesheet" href="../Styles/Menu.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -30,52 +31,52 @@ echo "Pass:$pass";
             <span class="icon-list"></span>
         </a>
     </div>
-    <nav>
+    <nav class="nav-1">
         <ul>
-            <img id="logo_menu_max" src="../IMG/logo-latina-2015.png"/>
-            <li><a href="HomeAdm.php"><span class="icon-home"></span> Inicio</a></li>
-            <li><a href="Mantenimiento.php"><span class="icon-tools"></span> Mantenimiento Dispositivos</a></li>
-            <li><a href="Estudiante.php"><span class="icon-add-user"></span> Estudiantes</a></li>
-            <li><a href="Profesor.php"><span class="icon-add-user"></span> Profesores</a></li>
-            <li><a href="#"><span class="icon-add-to-list"></span> Aulas</a></li>
-            <li><a href="../../Negocio/Cierre.php"><span class="icon-tag"></span> Cerrar sesión</a></li>
+            <li class="li-1"><img id="logo_menu_max" src="../IMG/logo-latina-2015.png"/></li>
+            <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
+            <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
+            <li class="li-1"><a href="Estudiante.php">Estudiantes</a></li>
+            <li class="li-1"><a href="Profesor.php">Profesores</a></li>
+            <li class="li-1"><a href="Aula.php">Aulas</a></li>
+            <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
     </nav>
 </header>
 
-</br></br>
-    <div class="container-center-A">
-        <form>
-            <label class="label-2" for="NumAula">N&uacute;mero</label>
-            <input class="input-2" type="text" name="NumAula" id="NumAula"/>
-            <input class="input-1" type="submit" name="go" id="go" value="Buscar"/>
-        </form>
-    </div>
-    <br/>
-<form class="formulario-1">
-    <div class="p-container">
-        <p>
-            <label class="label-1" for="NumAula">Numero Aula</label>
-            <input class="input-1" type="text" name="NumAula" id="NumAula"/>
-        </p>
-        <p>
-            <label class="label-1" for="edificio">Edificio</label>
-            <input class="input-1" type="text" name="edificio" id="edificio"/>
-        </p>
-        <p>
-            <label class="label-1" for="Capacidad">Capacidad</label>
-            <input class="input-1" type="text" name="capacidad" id="capacidad"/>
-        </p>
-    </div>
-</form>
 </br>
-<div class="container-center-A">
-    <input class="input-1" type="submit" name="go" id="go" value="Agregar"/>
-    <input class="input-1" type="submit" name="go" id="go" value="Editar"   />
-    <input class="input-1" type="submit" name="go" id="go" value="Eliminar"/>
+<div class="wrapper">
+    <h1 class="head-1">Aulas</h1>
+    <form class="formulario-2">
+        <input class="input-2" type="text" name="NumAula" id="NumAula"/>
+        <input class="input-1" type="submit" name="go" id="go" value="Busqueda por número"/>
+    </form>
 
+    <br/><br/>
+    <form class="formulario-1">
+        <h1>Datos</h1>
+        <div class="p-container">
+            <p>
+                <label class="label-1" for="NumAula">Numero Aula</label>
+                <input class="input-1" type="text" name="NumAula" id="NumAula"/>
+            </p>
+            <p>
+                <label class="label-1" for="edificio">Edificio</label>
+                <input class="input-1" type="text" name="edificio" id="edificio"/>
+            </p>
+            <p>
+                <label class="label-1" for="Capacidad">Capacidad</label>
+                <input class="input-1" type="text" name="capacidad" id="capacidad"/>
+            </p>
+        </div>
+    </form>
+    </br>
+    <div class="container-center-A">
+        <input class="input-1" type="submit" name="go" id="go" value="Agregar"/>
+        <input class="input-1" type="submit" name="go" id="go" value="Editar"   />
+        <input class="input-1" type="submit" name="go" id="go" value="Eliminar"/>
+    </div>
 </div>
-
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>
