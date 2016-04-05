@@ -236,6 +236,18 @@ body {
     text-decoration: underline;
 }
 
+.error
+{   padding: 10px;
+    color: red;
+    font-size: 15px;
+}
+
+.mensaje
+{   padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
 @media screen and (max-width:540px){
     .wrapper
     {
