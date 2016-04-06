@@ -14,7 +14,7 @@ if($user == null OR $pass == null)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Cursos</title>
+    <title>Aulas</title>
     <link rel="shortcut icon" href="../IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
@@ -52,7 +52,10 @@ if($user == null OR $pass == null)
     <form class="formulario-2">
         <input class="input-2" type="text" name="txtBxNAula" id="txtBNAula"/>
         <input class="input-1" type="submit" value="Busqueda por numero" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 5);return false;"/>
-        <input class="input-1" type="submit" value="Busqueda avanzada" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 2);return false;"/>
+        <div class="respuestas">
+            <label id="mensaje2" class="mensaje2"></label>
+            <label id="error2" class="error"></label>
+        </div>
     </form>
 
     <br/><br/>
@@ -71,23 +74,18 @@ if($user == null OR $pass == null)
                 <label class="label-1" for="Capacidad">Capacidad</label>
                 <input class="input-1" type="text" name="capacidad" id="txtCapacidad"/>
             </p>
-        </div>
-        <div class="mensaje">
-            <div id="mensaje1">
-
-            </div>
-        </div>
-        <div class="error">
-            <div id="error1">
-
+            <div class="respuestas">
+                <label id="mensaje1" class="mensaje"></label>
+                <label id="error1" class="error"></label>
             </div>
         </div>
     </form>
     </br>
     <div class="container-center-A">
-        <input class="input-1" type="submit" value="Agregar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), 1);return false;"/>
-        <input class="input-1" type="submit" value="Editar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), 3);return false;"/>
-        <input class="input-1" type="submit" value="Eliminar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), 4);return false;"/>
+        <input class="input-1" type="submit" value="Agregar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 1);return false;"/>
+        <input class="input-1" type="submit" value="Buscar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 2);return false;"/>
+        <input class="input-1" type="submit" value="Editar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 3);return false;"/>
+        <input class="input-1" type="submit" value="Eliminar" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 4);return false;"/>
     </div>
     </br>
 </div>

@@ -23,7 +23,7 @@ function peticionAula(txtNumero, txtEdificio, txtCapacidad, txtBNAula,numOpcion)
             $("#mensaje1").html("Procesando, espere por favor...");
         },
         success:  function (response) {
-            $("#mensaje1").html("");
+            cleanMsg();
             if(response == 1)
             {
                 $("#mensaje1").html("Aula agregada.");
@@ -60,3 +60,10 @@ function peticionAula(txtNumero, txtEdificio, txtCapacidad, txtBNAula,numOpcion)
     });
 }
 
+function cleanMsg()
+{
+    $("#mensaje1").html("");
+    $("#mensaje2").html("");
+    $("#error1").html("");
+    $("#error2").html("");
+}

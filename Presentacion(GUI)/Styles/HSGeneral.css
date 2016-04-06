@@ -236,16 +236,28 @@ body {
     text-decoration: underline;
 }
 
+.respuestas
+{
+    padding: 10px;
+}
+
 .error
-{   padding: 10px;
+{
     color: red;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .mensaje
-{   padding: 10px;
+{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.mensaje2
+{
+
+    color: blue;
+    font-size: 13px;
 }
 
 @media screen and (max-width:540px){
