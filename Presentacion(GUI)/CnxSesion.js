@@ -16,7 +16,7 @@ function logear(txtEmail, txtPassword)
         url:   url,
         type:  'post',
         beforeSend: function () {
-            $("#mensaje11").html("Procesando, espere por favor...");
+            $("#mensaje1").html("Procesando, espere por favor...");
         },
         success:  function (response) {
             if(response == 1)
