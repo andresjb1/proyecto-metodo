@@ -42,11 +42,11 @@ function peticionEstudiante(txtCarnet, txtNombre, txtApellido, txtbCarnet,numOpc
             }
             else if(response == 4)
             {
-                $("#mensaje1").html("Estudiante eliminada.");
+                $("#mensaje1").html("Estudiante eliminado.");
             }
             else if(response == 5)
             {
-                $("#mensaje2").html("Busqueda por numero realizada.");
+                $("#mensaje2").html("Busqueda por carnet realizada.");
                 $("#txtCarnet").val("B x  Numero");// Adentro de los parentisis remplazamos por atributo
                 $("#txtNombre").val("B x Numero");// Adentro de los parentisis remplazamos por atributo
                 $("#txtApellido").val("B x Numero");// Adentro de los parentisis remplazamos por atributo
