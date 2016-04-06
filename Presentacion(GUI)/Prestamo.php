@@ -20,6 +20,8 @@ if($user == null OR $pass == null)
     <link rel="stylesheet" href="Styles/Fonts.css"/>
     <link rel="stylesheet" href="Styles/Menu.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="CnxAdminPrestamos.js"></script>
 </head>
 <body>
 
@@ -45,20 +47,24 @@ if($user == null OR $pass == null)
     </br>
     <h1 class="head-1">Prestamo de dispositivos</h1>
     <br/><br/>
-    <form class="formulario-1">
+    <form class="formulario-1" method="post">
         <h1>Solicitud</h1>
         <div class="p-container">
             <p>
                 <label class="label-1" for="Codigo">Codigo</label>
-                <input class="input-1" type="text" name="codigo" id="codigo"/>
+                <input class="input-1" type="text" name="codigo" id="txtCodigo"/>
             </p>
             <p>
                 <label class="label-1"for="nombreDispo">Nombre</label>
-                <input class="input-1" type="text" name="nombreDispo" id="nombreDispo"/>
+                <input class="input-1" type="text" name="nombreDispo" id="txtNombre"/>
             </p>
             <p>
-                <input class="input-1" type="submit" name="go" id="go" value="Solicitar"/>
+                <input class="input-1" type="submit" value="Agregar" onclick="peticionPrestamo($('#txtCodigo').val(), $('#txtNombre').val());return false;"/>
             </p>
+            <div class="respuestas">
+                <label id="mensaje1" class="mensaje"></label>
+                <label id="error1" class="error"></label>
+            </div>
         </div>
     </form>
     </br>
@@ -67,6 +73,5 @@ if($user == null OR $pass == null)
 </div>
 
 </body>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="JS/menuScript.js"></script>
 </html>
