@@ -4,7 +4,6 @@
 
 function peticionAula(txtNumero, txtEdificio, txtCapacidad, txtBNAula,numOpcion)
 {
-    $("#error1").html("");
     var parametros = {
         "numero" : txtNumero,
         "edificio" : txtEdificio,

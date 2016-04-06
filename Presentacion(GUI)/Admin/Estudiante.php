@@ -21,6 +21,8 @@ if($user == null OR $pass == null)
     <link rel="stylesheet" href="../Styles/Fonts.css"/>
     <link rel="stylesheet" href="../Styles/Menu.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="CnxAdminEstudiantes.js"></script>
 </head>
 
 <body>
@@ -47,38 +49,47 @@ if($user == null OR $pass == null)
 <div class="wrapper">
     <h1 class="head-1">Estudiantes</h1>
 
-    <form class="formulario-2">
-        <input class="input-2" type="text" name="numCarnet" id="numCarnet"/>
-        <input class="input-1" type="submit" name="go" id="go" value="Buscar por carnet"/>
-        <input class="input-1" type="submit" name="go" id="go" value="Busqueda avanzada"/>
+    <form class="formulario-2" method="post">
+        <input class="input-2" type="text" name="txtBxNAula" id="txtbCarnet"/>
+        <input class="input-1" type="submit" value="Busqueda por carnet" onclick="peticionEstudiante($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 5);return false;"/>
+        <div class="respuestas">
+            <label id="mensaje2" class="mensaje2"></label>
+            <label id="error2" class="error"></label>
+        </div>
     </form>
 
     <br/></br>
-    <form class="formulario-1">
+    <form class="formulario-1" method="post">
         <h1>Datos</h1>
         <div class="p-container">
             <p>
                 <label class="label-1" for="NumCarnet">Carnet</label>
-                <input class="input-1" type="text" name="NumCarnet" id="NumCarnet"/>
+                <input class="input-1" type="text" name="txtCarnet" id="txtCarnet"/>
             </p>
             <p>
                 <label class="label-1" for="NomEstudiante">Nombre Estudiante</label>
-                <input class="input-1" type="text" name="NomEstudiante" id="NomEstudiante"/>
+                <input class="input-1" type="text" name="txtNombre" id="txtNombre"/>
             </p>
             <p>
-                <label class="label-1" for="NumAula">N° Aula</label>
-                <input class="input-1" type="text" name="NumAula" id="NumAula"/>
+                <label class="label-1" for="apellido">Apellido</label>
+                <input class="input-1" type="text" name="txtApellido" id="txtApellido"/>
             </p>
+            <div class="respuestas">
+                <label id="mensaje1" class="mensaje"></label>
+                <label id="error1" class="error"></label>
+            </div>
+        </div>
         </div>
     </form>
     </br>
     <div class="container-center-A">
-        <input class="input-1" type="submit" name="go" id="go" value="Agregar"/>
-        <input class="input-1" type="submit" name="go" id="go" value="Editar"   />
-        <input class="input-1" type="submit" name="go" id="go" value="Eliminar"/>
+        <input class="input-1" type="submit" value="Agregar" onclick="peticionEstudiante($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 1);return false;"/>
+        <input class="input-1" type="submit" value="Buscar" onclick="peticionEstudiante($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 2);return false;"/>
+        <input class="input-1" type="submit" value="Editar" onclick="peticionEstudiante($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 3);return false;"/>
+        <input class="input-1" type="submit" value="Eliminar" onclick="peticionEstudiante($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 4);return false;"/>
     </div>
+    </br>
 </div><!-- wrapper -->
 </body>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="../JS/menuScript.js"></script>
 </html>
