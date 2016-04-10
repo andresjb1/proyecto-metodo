@@ -1,13 +1,4 @@
-<?php
-SESSION_START();
-$user=$_SESSION['s_user'];
-$pass=$_SESSION['s_password'];
-if($user == null OR $pass == null)
-{
-    header('Location: Login.php');
-}
-//echo "usuario:$user</br>";
-//echo "Pass:$pass";
+
 ?>
 <!DOCTYPE html>
 
