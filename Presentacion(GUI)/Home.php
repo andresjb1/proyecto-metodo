@@ -37,7 +37,7 @@ if($user == null OR $pass == null)
             <li class="li-1"><a href="Home.php"><span class="icon-home"></span>Inicio</a></li>
             <li class="li-1"><a href="Prestamo.php"><span class="icon-add-to-list"></span>Prestamo</a></li>
             <li class="li-1"><a href="Perfil.php"><span class="icon-users"></span> Perfil</a></li>
-            <li class="li-1"><a href="Contacto.php"><span class="icon-users"></span> Extra</a></li>
+            <li class="li-1"><a href="Contacto.php"><span class="icon-users"></span> Contacto</a></li>
             <li class="li-1"><a href="../Negocio/Cierre.php"><span class="icon-lock"></span>Cerrar sesión</a></li>
         </ul>
     </nav>
