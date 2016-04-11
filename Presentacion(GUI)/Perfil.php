@@ -47,13 +47,13 @@
         <div class="p-container">
             <div class="NewClass">
                 <p>
-                    <label class="label-3" for="NomDispositivo">Carnet:</label>
+                    <label class="label-3" for="NomDispositivo">Carnet:</label><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Nombre:</label>
+                    <label class="label-3" for="NumAula">Nombre:</label><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Sede:</label>
+                    <label class="label-3" for="NumAula">Sede:</label><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Teléfono:</label>

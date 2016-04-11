@@ -1,5 +1,5 @@
 
-?>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
     <link rel="stylesheet" href="Styles/Fonts.css"/>
     <link rel="stylesheet" href="Styles/Menu.css"/>
+    <link rel="stylesheet" href="Styles/Contacto.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -47,23 +48,51 @@
         <div class="p-container">
             <div class="NewClass">
                 <p>
-                    Si tiene alguna duda o problemas no dude en contactarnos con alguno de nuestros agentes
-                    <IMG SRC="immagine.gif" WIDTH=178 HEIGHT=180 BORDER=2 ALT="Obra de K. Haring">
+                    <label class="label2" </label>
+                    Si tiene alguna duda o problema no dude <br> en contactarnos con alguno de nuestros agentes <br><br>
+                   <!--<IMG SRC="Contacto.jpg" WIDTH=178 HEIGHT=180 BORDER=2 -->
                 </p>
-                <p>
+                  <!--  <IMG src="Contacto.jpg" WIDTH="200" HEIGHT="200" class="img-rounded" align="middle" ><br><br>-->
+                <img src="Contacto.jpg" WIDTH="200" HEIGHT="200" alt="contacto" class="image-rounded" >
 
-                    Andres Juarez Baez
 
+                <p>
+                    <p>
+                    <label class="label-3" </label>
+
+                    Andres Juarez Baez <br>
+                    Correo Electronico: <A HREF="mailto:andres.juarez1@ulatina.net">andres.juarez1@ulatina.net</A>  <br>
+                    Numero Telefonico: 8835-8406 <br><br><br>
+                    </p>
                 </p>
                 <p>
-                    <label class="label-3" for="Benjamin Wesley Mora">Nombre:</label>
+                 <p>
+                    <label class="label-3" </label>
+
+                    Benjamin Wesley <br>
+                    Correo Electronico: <A HREF="mailto:Benjamin Wesley Mora"> benjamin.wesley@ulatina.net</A> <br>
+                    Numero Telefonico: 7206-1876 <br><br><br>
+                </p>
+                 </p>
+                <p>
+                    <p>
+                    <label class="label-3" </label>
+
+                    Emanuel Baldizon <br>
+                    Correo Electronico: <A HREF="mailto:Emanuel Baldizon"> jose.baldizon@ulatina.net</A> <br>
+                    Numero Telefonico: 6248-5423 <br><br>
+                    </p>
                 </p>
                 <p>
-                    <label class="label-3" for="Emanuel Baldizon">Sede:</label>
+                 <p>
+                    <label class="label-3" </label>
+
+                    Dennis Rivera  <br>
+                    Correo Electronico: <A HREF="mailto:Denis Rivera"> dennis.rivera@ulatina.net</A> <br>
+                    Numero Telefonico: 7102-0980 <br><br><br>
+                 </p>
                 </p>
-                <p>
-                    <label class="label-3" for="NumAula">Teléfono:</label>
-                </p>
+
 
             </div>
         </div>
