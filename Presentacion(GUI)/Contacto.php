@@ -50,15 +50,17 @@
                 <p>
                     <label class="label2" </label>
                     Si tiene alguna duda o problema no dude <br> en contactarnos con alguno de nuestros agentes <br><br>
-                   <!--<IMG SRC="Contacto.jpg" WIDTH=178 HEIGHT=180 BORDER=2 -->
+
                 </p>
                   <!--  <IMG src="Contacto.jpg" WIDTH="200" HEIGHT="200" class="img-rounded" align="middle" ><br><br>-->
-                <img src="Contacto.jpg" WIDTH="200" HEIGHT="200" alt="contacto" class="image-rounded" >
+                <IMG src="contacto.jpeg" WIDTH="200" HEIGHT="200" alt="contacto"  align="middle">
+
 
 
                 <p>
                     <p>
                     <label class="label-3" </label>
+                    <br>
 
                     Andres Juarez Baez <br>
                     Correo Electronico: <A HREF="mailto:andres.juarez1@ulatina.net">andres.juarez1@ulatina.net</A>  <br>
