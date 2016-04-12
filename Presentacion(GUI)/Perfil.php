@@ -54,7 +54,8 @@
                     <label class="label-3" for="NomDispositivo">Carnet:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Nombre:</label><br><br>
+                    <label class="label-3" for="NumAula">Nombre:</label>
+                    <label class="label-3" for="aula"></label><br><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Sede:</label><br><br>
@@ -63,11 +64,15 @@
                     <label class="label-3" for="NumAula">Teléfono:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Email:</label><br><br>
+                    <label class="label-3" for="NumAula">Email:</label><br><br><br>
                 </p>
 
                 <p>
                     <label class="label-3" </label>
+                    ¡Ayuda! Contacte con alguno de nuestro agentes:
+                    <a href="Contacto.php">
+                        <img src="IMG/ayuda1.jpg" alt="Contacto" align="middle" style="width:50px;height:50px;border:0;">
+                    </a>
                 </p>
             </div>
         </div>
