@@ -46,20 +46,28 @@
     <form runat="server">
         <div class="p-container">
             <div class="NewClass">
+                <br><br>
+
+                <img src="IMG/profile.png" WIDTH="200" HEIGHT="200" alt="contacto"  align="absmiddle">
+                <br><br>
                 <p>
-                    <label class="label-3" for="NomDispositivo">Carnet:</label><br>
+                    <label class="label-3" for="NomDispositivo">Carnet:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Nombre:</label><br>
+                    <label class="label-3" for="NumAula">Nombre:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Sede:</label><br>
+                    <label class="label-3" for="NumAula">Sede:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Teléfono:</label>
+                    <label class="label-3" for="NumAula">Teléfono:</label><br><br>
                 </p>
                 <p>
-                    <label class="label-3" for="NumAula">Email:</label>
+                    <label class="label-3" for="NumAula">Email:</label><br><br>
+                </p>
+
+                <p>
+                    <label class="label-3" </label>
                 </p>
             </div>
         </div>

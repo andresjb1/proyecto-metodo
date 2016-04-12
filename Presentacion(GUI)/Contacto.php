@@ -49,11 +49,11 @@
             <div class="NewClass">
                 <p>
                     <label class="label2" </label>
-                    Si tiene alguna duda o problema no dude <br> en contactarnos con alguno de nuestros agentes <br><br>
+                    Si tiene alguna duda o problema no dude en <br> contactar con alguno de nuestros agentes. <br><br>
 
                 </p>
                   <!--  <IMG src="Contacto.jpg" WIDTH="200" HEIGHT="200" class="img-rounded" align="middle" ><br><br>-->
-                <IMG src="contacto.jpeg" WIDTH="200" HEIGHT="200" alt="contacto"  align="middle">
+                <IMG src="IMG/contacto.jpg" WIDTH="200" HEIGHT="200" alt="contacto"  align="middle">
 
 
 
