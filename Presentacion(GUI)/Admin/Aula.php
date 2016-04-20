@@ -59,20 +59,20 @@ if($user == null OR $pass == null)
     </form>
 
     <br/><br/>
-    <form class="formulario-1" method="post">
+    <form class="formulario-1" method="post" action="">
         <h1>Datos</h1>
         <div class="p-container">
             <p>
                 <label class="label-1" for="NumAula">Numero Aula</label>
-                <input class="input-1" type="text" name="NumAula" id="txtNumero"/>
+                <input class="input-1" type="text" name="NumAula" id="txtNumero">
             </p>
             <p>
                 <label class="label-1" for="edificio">Edificio</label>
-                <input class="input-1" type="text" name="edificio" id="txtEdificio"/>
+                <input class="input-1" type="text" name="edificio" id="txtEdificio">
             </p>
             <p>
                 <label class="label-1" for="Capacidad">Capacidad</label>
-                <input class="input-1" type="text" name="capacidad" id="txtCapacidad"/>
+                <input class="input-1" type="text" name="capacidad" id="txtCapacidad">
             </p>
             <div class="respuestas">
                 <label id="mensaje1" class="mensaje"></label>

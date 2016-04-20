@@ -12,4 +12,5 @@ namespace proyecto\Entidades;
 class Aula
 {
 
+
 }

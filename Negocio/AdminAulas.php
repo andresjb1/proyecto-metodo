@@ -1,7 +1,12 @@
 <?php
+include "vendor/autoload.php";
+include "config/db.php";
+
     //Funciones CRUD, de primero para evitar errores al ser invocadas mas adelante.
     function createAula($numero, $edificio, $capacidad)
     {
+        $aula = new \proyecto\Entidades\Aula($numero, $edificio, $capacidad);
+        $entityManager->flush();
         /*INCLUDE PHP AccesoAula.php
         Referencia a una funcion CREATE de AccesoAula.php, en la cual reciba por parametros
         numero, edificio y capacidad
@@ -135,4 +140,3 @@
         }
 
     }
-?>

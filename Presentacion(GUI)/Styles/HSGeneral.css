@@ -13,6 +13,11 @@ body {
     margin: auto;
 }
 
+.alert{
+    color: red;
+    padding:10px;
+}
+
 /*Fondo del panel*/
 .formulario-1 {
 

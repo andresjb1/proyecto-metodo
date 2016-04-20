@@ -21,7 +21,7 @@ else
         'password' => $password
     ]);
 
-    //En vez de la comparacion de user, 1234, se debe realizar una consulta a la BD
+
     if($usuario != null)
     {
         if ($usuario->getRol()->getId() == \proyecto\Entidades\Rol::ADMIN){

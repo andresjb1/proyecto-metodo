@@ -21,8 +21,8 @@ function logear(txtEmail, txtPassword)
         success:  function (response) {
             if(response == 1)
             {
-                $("#mensaje1").html("Ingresando...");
-                window.location="Home.php";
+                $("#mensaje1").html("..Ingresando...");
+                window.location="../Home.php";
             }
             else if(response == 2)
             {
