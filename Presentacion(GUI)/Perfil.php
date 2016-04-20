@@ -1,14 +1,3 @@
-<?php
-SESSION_START();
-$user=$_SESSION['s_user'];
-$pass=$_SESSION['s_password'];
-if($user == null OR $pass == null)
-{
-    header('Location: Login.php');
-}
-//echo "usuario:$user</br>";
-//echo "Pass:$pass";
-?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,30 +24,57 @@ if($user == null OR $pass == null)
             <li class="li-1"><a href="Home.php"><span class="icon-home"></span>Inicio</a></li>
             <li class="li-1"><a href="Prestamo.php"><span class="icon-add-to-list"></span>Prestamo</a></li>
             <li class="li-1"><a href="Perfil.php"><span class="icon-users"></span> Perfil</a></li>
+            <li class="li-1"><a href="Contacto.php"><span class="icon-users"></span> Contacto</a></li>
+
             <li class="li-1"><a href="../Negocio/Cierre.php"><span class="icon-lock"></span> Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>
+
 <div class="wrapper">
+    <div>
+
+
+
+
+    </div>
+
     </br>
     <h1 class="head-1">Perfil</h1>
     <form runat="server">
         <div class="p-container">
             <div class="NewClass">
+                <br>
+
+                <img src="IMG/profile.png" WIDTH="200" HEIGHT="200" alt="contacto">
+                <br><br>
                 <p>
                     <label class="label-3" for="NomDispositivo">Carnet:</label>
+                    <label class="label-3" for="aula">...</label><br><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Nombre:</label>
+                    <label class="label-3" for="aula">...</label><br><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Sede:</label>
+                    <label class="label-3" for="aula">...</label><br><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Teléfono:</label>
+                    <label class="label-3" for="aula">...</label><br><br>
                 </p>
                 <p>
                     <label class="label-3" for="NumAula">Email:</label>
+                    <label class="label-3" for="aula">...</label><br><br><br>
+                </p>
+
+                <p>
+                    <label class="label-3" </label>
+                    ¿Necesita ayuda? Contacte con alguno de nuestros agentes:
+                    <a href="Contacto.php">
+                        <img src="IMG/ayuda1.jpg" alt="Contacto" align="middle" style="width:50px;height:50px;border:0;">
+                    </a>
                 </p>
             </div>
         </div>
