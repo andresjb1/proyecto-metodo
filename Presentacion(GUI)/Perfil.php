@@ -20,11 +20,8 @@ if($user == null OR $pass == null)
     <link rel="stylesheet" href="Styles/Fonts.css"/>
     <link rel="stylesheet" href="Styles/Menu.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="CnxAdminPrestamos.js"></script>
 </head>
 <body>
-
 <header>
     <div class="menu_bar">
 
@@ -42,36 +39,32 @@ if($user == null OR $pass == null)
         </ul>
     </nav>
 </header>
-
 <div class="wrapper">
     </br>
-    <h1 class="head-1">Prestamo de dispositivos</h1>
-    <br/><br/>
-    <form class="formulario-1" method="post">
-        <h1>Solicitud</h1>
+    <h1 class="head-1">Perfil</h1>
+    <form runat="server">
         <div class="p-container">
-            <p>
-                <label class="label-1" for="Codigo">Codigo</label>
-                <input class="input-1" type="text" name="codigo" id="txtCodigo"/>
-            </p>
-            <p>
-                <label class="label-1"for="nombreDispo">Nombre</label>
-                <input class="input-1" type="text" name="nombreDispo" id="txtNombre"/>
-            </p>
-            <p>
-                <input class="input-1" type="submit" value="Agregar" onclick="peticionPrestamo($('#txtCodigo').val(), $('#txtNombre').val());return false;"/>
-            </p>
-            <div class="respuestas">
-                <label id="mensaje1" class="mensaje"></label>
-                <label id="error1" class="error"></label>
+            <div class="NewClass">
+                <p>
+                    <label class="label-3" for="NomDispositivo">Carnet:</label>
+                </p>
+                <p>
+                    <label class="label-3" for="NumAula">Nombre:</label>
+                </p>
+                <p>
+                    <label class="label-3" for="NumAula">Sede:</label>
+                </p>
+                <p>
+                    <label class="label-3" for="NumAula">Teléfono:</label>
+                </p>
+                <p>
+                    <label class="label-3" for="NumAula">Email:</label>
+                </p>
             </div>
         </div>
     </form>
-    </br>
-
-
 </div>
 
 </body>
 <script src="JS/menuScript.js"></script>
-</html>
+</html

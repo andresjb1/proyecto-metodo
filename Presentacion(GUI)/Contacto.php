@@ -1,27 +1,16 @@
-<?php
-SESSION_START();
-$user=$_SESSION['s_user'];
-$pass=$_SESSION['s_password'];
-if($user == null OR $pass == null)
-{
-    header('Location: Login.php');
-}
-echo "usuario:$user</br>";
-echo "Pass:$pass";
-?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Solicitudes</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="IMG/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="Styles/HSGeneral.css" />
     <link rel="stylesheet" href="Styles/Fonts.css"/>
     <link rel="stylesheet" href="Styles/Menu.css"/>
 </head>
-
 <body>
+
 <header>
     <div class="menu_bar">
 
@@ -40,29 +29,8 @@ echo "Pass:$pass";
     </nav>
 </header>
 
-</br></br>
 
-<form class="formulario-1" runat="server">
-    <div class="p-container">
-    <h1>Solicitar Dispositivo</h1>
-    <div class="NewClass">
-        <p>
-            <label class="label-1" for="NomDispositivo">Dispositivo</label>
-            <input class="input-1" type="text" name="NomDispositivo" id="NomDispositivo"/>
-        </p>
-        <p>
-            <label class="label-1" for="NumAula">Aula</label>
-            <input class="input-1" type="text" name="NumAula" id="NumAula"/>
-        </p>
-    </div>
-    <p class="p-container">
-
-        <input class="input-1" type="submit" name="go" id="go" value="Solicitar Dispositivo"/>
-    </p>
-    </div>
-</form>
-
-</body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="JS/menuScript.js"></script>
+</body>
 </html>
