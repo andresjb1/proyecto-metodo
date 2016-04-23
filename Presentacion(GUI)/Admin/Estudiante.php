@@ -75,8 +75,12 @@ if($user == null OR $pass == null)
         <h1>Datos</h1>
         <div class="p-container">
             <p>
-                <label class="label-1" for="NumCarnet">Carnet</label>
-                <input class="input-1" type="text" name="txtCarnet" id="txtCarnet"/>
+                <label class="label-1" for="lblcorreo">Correo</label>
+                <input class="input-1" type="text" name="txtCorreo" id="txtCorreo"/>
+            </p>
+            <p>
+                <label class="label-1" for="lblContraseña">Contraseña</label>
+                <input class="input-1" type="password" name="txtContraseña" id="txtContraseña"/>
             </p>
             <p>
                 <label class="label-1" for="NomEstudiante">Nombre Estudiante</label>
@@ -86,6 +90,11 @@ if($user == null OR $pass == null)
                 <label class="label-1" for="apellido">Apellido</label>
                 <input class="input-1" type="text" name="txtApellido" id="txtApellido"/>
             </p>
+            <p>
+                <label class="label-1" for="apellido">Telefono</label>
+                <input class="input-1" type="text" name="txtTelefono" id="txtApellido"/>
+            </p>
+
             <div class="respuestas">
                 <label id="mensaje1" class="mensaje"></label>
                 <label id="error1" class="error"></label>

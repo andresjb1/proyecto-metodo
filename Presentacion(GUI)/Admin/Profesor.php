@@ -58,7 +58,7 @@ if($user == null OR $pass == null)
     </form>
 
     </br></br>
-    <form class="formulario-1">
+    <form class="formulario-1" action="../../Negocio/registroProfesor.php">
         <h1>Datos</h1>
         <div class="p-container">
             <p>
@@ -86,14 +86,12 @@ if($user == null OR $pass == null)
                 <label id="error1" class="error"></label>
             </div>
         </div>
+        <input class="input-1" type="submit" value="Agregar" />
     </form>
+    </div>
     </br>
     <div class="container-center-A">
-        <input class="input-1" type="submit" value="Agregar" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 1);return false;"/>
-        <input class="input-1" type="submit" value="Buscar" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 2);return false;"/>
-        <input class="input-1" type="submit" value="Editar" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 3);return false;"/>
-        <input class="input-1" type="submit" value="Eliminar" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 4);return false;"/>
-    </div>
+
     </br>
 </div>
 </body>
