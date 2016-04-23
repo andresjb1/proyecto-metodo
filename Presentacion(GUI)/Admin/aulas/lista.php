@@ -44,9 +44,9 @@ $aulas = $entityManager->getRepository(\proyecto\Entidades\Aula::class)->findAll
         <ul>
             <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
-            <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
+            <li class="li-1"><a href="../Dispositivo/listaDispositivo.php">Dispositivos</a></li>
             <li class="li-1"><a href="../Estudiante/listaEstudiante.php">Estudiantes</a></li>
-            <li class="li-1"><a href="Profesor.php">Profesores</a></li>
+            <li class="li-1"><a href="../Profesor/listaProfesor.php.php">Profesores</a></li>
             <li class="li-1"><a href="lista.php">Aulas</a></li>
             <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>

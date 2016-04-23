@@ -40,9 +40,9 @@ $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id
         <ul>
             <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
-            <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
+            <li class="li-1"><a href="../Dispositivo/listaDispositivo.php">Dispositivos</a></li>
             <li class="li-1"><a href="listaEstudiante.php">Estudiantes</a></li>
-            <li class="li-1"><a href="Profesor.php">Profesores</a></li>
+            <li class="li-1"><a href="../Profesor/listaProfesor.php">Profesores</a></li>
             <li class="li-1"><a href="../aulas/lista.php">Aulas</a></li>
             <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
