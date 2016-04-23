@@ -51,7 +51,7 @@ if($user == null OR $pass == null)
     <h1 class="head-1">Aulas</h1>
     <form class="formulario-2">
         <input class="input-2" type="text" name="txtBxNAula" id="txtBNAula"/>
-        <input class="input-1" type="submit" value="Busqueda por numero" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 5);return false;"/>
+        <input class="input-1" type="submit" value="B&uacute;squeda por n&uacute;mero" onclick="peticionAula($('#txtNumero').val(), $('#txtEdificio').val(), $('#txtCapacidad').val(), $('#txtBNAula').val(), 5);return false;"/>
         <div class="respuestas">
             <label id="mensaje2" class="mensaje2"></label>
             <label id="error2" class="error"></label>
@@ -63,7 +63,7 @@ if($user == null OR $pass == null)
         <h1>Datos</h1>
         <div class="p-container">
             <p>
-                <label class="label-1" for="NumAula">Numero Aula</label>
+                <label class="label-1" for="NumAula">N&uacute;mero Aula</label>
                 <input class="input-1" type="text" name="NumAula" id="txtNumero">
             </p>
             <p>
