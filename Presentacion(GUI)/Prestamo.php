@@ -51,7 +51,7 @@ if($user == null OR $pass == null)
         <h1>Solicitud</h1>
         <div class="p-container">
             <p>
-                <label class="label-1" for="Codigo">Codigo</label>
+                <label class="label-1" for="Codigo">C&oacute;digo</label>
                 <input class="input-1" type="text" name="codigo" id="txtCodigo"/>
             </p>
             <p>

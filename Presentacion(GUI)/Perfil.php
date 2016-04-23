@@ -1,3 +1,14 @@
+<?php
+SESSION_START();
+$user=$_SESSION['s_user'];
+$pass=$_SESSION['s_password'];
+if($user == null OR $pass == null)
+{
+    header('Location: Login.php');
+}
+//echo "usuario:$user</br>";
+//echo "Pass:$pass";
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -46,7 +57,7 @@
             <div class="NewClass">
                 <br>
 
-                <img src="IMG/profile.png" WIDTH="200" HEIGHT="200" alt="contacto">
+                <img src="IMG/profile.jpg" WIDTH="200" HEIGHT="200" alt="contacto">
                 <br><br>
                 <p>
                     <label class="label-3" for="NomDispositivo">Carnet:</label>
