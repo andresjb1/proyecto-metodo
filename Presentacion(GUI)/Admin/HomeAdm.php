@@ -64,7 +64,7 @@ if($user == null OR $pass == null)
             </div>
             <div class="item">
                 <a href="#" target="blank">
-                    <img src="../IMG/banner/23.png" alt="Ulatina-publicidad-2">
+                    <img src="../IMG/banner/22.png" alt="Ulatina-publicidad-2">
                 </a>
                 <div class="carousel-caption">
                     ...
@@ -72,15 +72,15 @@ if($user == null OR $pass == null)
             </div>
             <div class="item">
                 <a href="#" target="blank">
-                    <img src="../IMG/banner/24.png" alt="Ulatina-publicidad-3">
+                    <img src="../IMG/banner/23.png" alt="Ulatina-publicidad-3">
                 </a>
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <a href="http://www.ulatina.ac.cr/oferta-academica/ejecutivas" target="blank">
-                    <img src="../IMG/banner/7.png" alt="Ulatina-publicidad-4">
+                <a href="#" target="blank">
+                    <img src="../IMG/banner/24.png" alt="Ulatina-publicidad-4">
                 </a>
                 <div class="carousel-caption">
                     ...
