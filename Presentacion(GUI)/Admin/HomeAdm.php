@@ -55,32 +55,32 @@ if($user == null OR $pass == null)
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <a href="http://www.ulatina.ac.cr/oferta-academica/postgrados" target="blank">
-                    <img src="../IMG/banner/1.png" alt="Ulatina-publicidad-1">
+                <a href="#" target="blank">
+                    <img src="../IMG/banner/21.png" alt="Ulatina-publicidad-1">
                 </a>
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <a href="http://www.ulatina.ac.cr/cuatrimestre2014/facultades/" target="blank">
-                    <img src="../IMG/banner/3.png" alt="Ulatina-publicidad-2">
+                <a href="#" target="blank">
+                    <img src="../IMG/banner/22.png" alt="Ulatina-publicidad-2">
                 </a>
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <a href="http://www.ulatina.ac.cr/comunidad/noticias/universidad-latina-de-costa-rica-licenciada-como-marca-pais" target="blank">
-                    <img src="../IMG/banner/5.png" alt="Ulatina-publicidad-3">
+                <a href="#" target="blank">
+                    <img src="../IMG/banner/23.png" alt="Ulatina-publicidad-3">
                 </a>
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <a href="http://www.ulatina.ac.cr/oferta-academica/ejecutivas" target="blank">
-                    <img src="../IMG/banner/7.png" alt="Ulatina-publicidad-4">
+                <a href="#" target="blank">
+                    <img src="../IMG/banner/24.png" alt="Ulatina-publicidad-4">
                 </a>
                 <div class="carousel-caption">
                     ...
