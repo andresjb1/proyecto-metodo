@@ -80,14 +80,6 @@ if($user == null OR $pass == null)
                     ...
                 </div>
             </div>
-            <div class="item">
-                <a href="http://www.ulatina.ac.cr/oferta-academica/ejecutivas" target="blank">
-                    <img src="IMG/banner/7.png" alt="Ulatina-publicidad-4">
-                </a>
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
         </div>
 
         <!-- Controls -->
