@@ -48,7 +48,7 @@ if($user == null OR $pass == null)
 </br>
 <div class="wrapper">
     <h1 class="head-1">Estudiantes</h1>
-
+<!--
     <form class="formulario-2" method="post" action="../../Negocio/registroUsuario.php">
         <input class="input-2" type="text" name="txtBxNAula" id="txtbCarnet"/>
         <input class="input-1" type="submit" value="Busqueda por carnet"/>
@@ -57,12 +57,21 @@ if($user == null OR $pass == null)
             <label id="error2" class="error"></label>
         </div>
     </form>
-
+-->
     <br><br>
     <form class="formulario-1" method="post" action="../../Negocio/registroUsuario.php">
         <?php if(isset($_GET["error"]) && $_GET['error'] == 1): ?>
             <div class="alert alert-danger">Debe poner un carnet</div>
         <?php endif ?>
+
+        <?php if(isset($_GET["error"]) && $_GET['error'] == 2): ?>
+            <div class="alert alert-danger">Debe poner un nombre</div>
+        <?php endif ?>
+
+        <?php if(isset($_GET["error"]) && $_GET['error'] == 3): ?>
+            <div class="alert alert-danger">Debe poner un apellido</div>
+        <?php endif ?>
+
         <h1>Datos</h1>
         <div class="p-container">
             <p>
