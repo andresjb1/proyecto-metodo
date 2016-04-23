@@ -5,19 +5,15 @@ include "../../../config/db.php";
 
 
 $correo=$_POST['correo'];
-$contraseña=$_POST['contraseña'];
 $nombre=$_POST['nombre'];
-$apellido=$_POST['apellido'];
+$apellidos=$_POST['apellidos'];
 $telefono=$_POST['telefono'];
-
-$rol = $entityManager->find(\proyecto\Entidades\Rol::class, \proyecto\Entidades\Rol::ESTUDIANTE);
 
 
 $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id']);
 $estudiante->setCorreo($correo);
-$estudiante->setContraseña($contraseña);
 $estudiante->setNombre($nombre);
-$estudiante->setApellido($apellido);
+$estudiante->setApellidos($apellidos);
 $estudiante->setTelefono($telefono);
 
 $entityManager->merge($estudiante); // combinar los cambios

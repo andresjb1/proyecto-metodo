@@ -10,7 +10,7 @@ if($user == null OR $pass == null)
 include "../../../vendor/autoload.php";
 include "../../../config/db.php";
 
-$estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)->findByrol("2");
+$profesor = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)->findByrol("3");
 
 ?>
 
@@ -42,8 +42,8 @@ $estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)
             <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
             <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
-            <li class="li-1"><a href="listaEstudiante.php">Estudiantes</a></li>
-            <li class="li-1"><a href="../Profesor/listaProfesor.php">Profesores</a></li>
+            <li class="li-1"><a href="../Estudiante/listaEstudiante.php">Estudiantes</a></li>
+            <li class="li-1"><a href="Profesor.php">Profesores</a></li>
             <li class="li-1"><a href="../aulas/lista.php">Aulas</a></li>
             <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
@@ -55,11 +55,11 @@ $estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)
     <div class="row">
         <div class="col-md-12">
             <div class="pull-left">
-                <h2>Lista de Estudiantes</h2>
+                <h2>Lista de Profesores</h2>
             </div>
             <div class="pull-right">
                 <div class="btn-group">
-                    <a href="registroUsuario.php" class="btn btn-primary btn-sm">Registrar Estudiante</a>
+                    <a href="registroUsuario.php" class="btn btn-primary btn-sm">Registrar Profesor</a>
                 </div>
             </div>
         </div>
@@ -77,20 +77,20 @@ $estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)
                 </tr>
                 </thead>
                 <tbody>
-                <?php if (!empty($estudiantes)): ?>
-                    <?php /** @var \proyecto\Entidades\Usuario $Estudiante */
-                    foreach ($estudiantes as $estudiante): ?>
+                <?php if (!empty($profesor)): ?>
+                    <?php /** @var \proyecto\Entidades\Usuario $Profesor */
+                    foreach ($profesor as $profesor): ?>
                         <tr>
-                            <td><a href="eliminar_estudiante.php?id=<?php echo $estudiante->getId()?>">X</td>
-                            <td><a href="editarEstudiante.php?id=<?php echo $estudiante->getId()?>">#<?php echo $estudiante->getCorreo()?></a></td>
-                            <td><?php echo $estudiante->getNombre()?></td>
-                            <td><?php echo $estudiante->getApellidos()?></td>
-                            <td><?php echo $estudiante->getTelefono()?></td>
+                            <td><a href="eliminar_profesor.php?id=<?php echo $profesor->getId()?>">X</td>
+                            <td><a href="editarProfesor.php?id=<?php echo $profesor->getId()?>">#<?php echo $profesor->getCorreo()?></a></td>
+                            <td><?php echo $profesor->getNombre()?></td>
+                            <td><?php echo $profesor->getApellidos()?></td>
+                            <td><?php echo $profesor->getTelefono()?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3">No hay estudiantes registrados</td>
+                        <td colspan="3">No hay profesores registrados</td>
                     </tr>
                 <?php endif ?>
                 </tbody>
@@ -99,5 +99,3 @@ $estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)
     </div>
 </div>
 </body>
-</html>
-

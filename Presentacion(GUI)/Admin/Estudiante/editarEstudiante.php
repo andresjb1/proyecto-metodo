@@ -41,9 +41,9 @@ $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id
             <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
             <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
-            <li class="li-1"><a href="../Estudiante.php">Estudiantes</a></li>
+            <li class="li-1"><a href="listaEstudiante.php">Estudiantes</a></li>
             <li class="li-1"><a href="Profesor.php">Profesores</a></li>
-            <li class="li-1"><a href="Aula.php">Aulas</a></li>
+            <li class="li-1"><a href="../aulas/lista.php">Aulas</a></li>
             <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
     </nav>
@@ -53,7 +53,7 @@ $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Editar estudiante #<?php echo $estudiante->getCorreo()?></h2>
+            <h2>Editar estudiante #<?php echo $estudiante->getNombre()?></h2>
         </div>
     </div>
     <div class="row">
@@ -62,15 +62,10 @@ $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id
                 <div class="form-group">
                     <label class="col-md-offset-2 col-md-2">Correo</label>
                     <div class="col-md-5">
-                        <input type="text" value="<?php echo $estudiante->getCorreo()?>" name="correo" class="form-control">
+                        <input type="text" name="correo" class="form-control" value="<?php echo $estudiante->getCorreo()?>">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-offset-2 col-md-2">Contraseña</label>
-                    <div class="col-md-5">
-                        <input type="text" value="<?php echo $estudiante->getContraseña()?>" name="contraseña" class="form-control">
-                    </div>
-                </div>
+
                 <div class="form-group">
                     <label class="col-md-offset-2 col-md-2">Nombre</label>
                     <div class="col-md-5">
@@ -80,21 +75,25 @@ $estudiante = $entityManager->find(\proyecto\Entidades\Usuario::class, $_GET['id
                 <div class="form-group">
                     <label class="col-md-offset-2 col-md-2">Apellidos</label>
                     <div class="col-md-5">
-                        <input type="text" name="apellidos" class="form-control" value="<?php echo $estudiante->getNombre()?>">
+                        <input type="text" name="apellidos" class="form-control" value="<?php echo $estudiante->getApellidos()?>">
                     </div>
                 </div>
-                    <div class="form-group">
+                <div class="form-group">
                     <label class="col-md-offset-2 col-md-2">Telefono</label>
                     <div class="col-md-5">
                         <input type="text" name="telefono" class="form-control" value="<?php echo $estudiante->getTelefono()?>">
                     </div>
                 </div>
+
                 <div class="form-group">
                     <div class="col-md-12">
                         <br>
                         <input type="submit" value="Guardar" class="btn btn-primary">
                     </div>
                 </div>
+
+
+
             </form>
         </div>
     </div>
