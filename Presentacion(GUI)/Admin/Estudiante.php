@@ -51,7 +51,7 @@ if($user == null OR $pass == null)
 <!--
     <form class="formulario-2" method="post" action="../../Negocio/registroUsuario.php">
         <input class="input-2" type="text" name="txtBxNAula" id="txtbCarnet"/>
-        <input class="input-1" type="submit" value="Busqueda por carnet"/>
+        <input class="input-1" type="submit" value="B&uacute;squeda por carnet"/>
         <div class="respuestas">
             <label id="mensaje2" class="mensaje2"></label>
             <label id="error2" class="error"></label>
@@ -99,7 +99,7 @@ if($user == null OR $pass == null)
                 <input class="input-1" type="text" name="txtApellido" id="txtApellido"/>
             </p>
             <p>
-                <label class="label-1" for="apellido">Telefono</label>
+                <label class="label-1" for="apellido">Tel&eacute;fono</label>
                 <input class="input-1" type="text" name="txtTelefono" id="txtApellido"/>
             </p>
 
