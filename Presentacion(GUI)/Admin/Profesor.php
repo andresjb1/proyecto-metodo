@@ -49,7 +49,7 @@ if($user == null OR $pass == null)
     <h1 class="head-1">Profesores</h1>
     <form class="formulario-2" method="post" >
         <input class="input-2" type="text" name="txtBxNAula" id="txtbCarnet"/>
-        <input class="input-1" type="submit" value="Busqueda por carnet" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 5);return false;"/>
+        <input class="input-1" type="submit" value="B&uacute;squeda por carnet" onclick="peticionProfesor($('#txtCarnet').val(), $('#txtNombre').val(), $('#txtApellido').val(), $('#txtbCarnet').val(), 5);return false;"/>
         <div class="respuestas">
             <label id="mensaje2" class="mensaje2"></label>
             <label id="error2" class="error"></label>
@@ -77,7 +77,7 @@ if($user == null OR $pass == null)
                 <input class="input-1" type="text" name="txtApellido" id="txtApellido"/>
             </p>
             <p>
-                <label class="label-1" for="apellido">Telefono</label>
+                <label class="label-1" for="apellido">T&eacute;lefono</label>
                 <input class="input-1" type="text" name="txtTelefono" id="txtApellido"/>
             </p>
             <div class="respuestas">
