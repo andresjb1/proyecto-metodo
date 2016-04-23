@@ -77,7 +77,7 @@ if($user == null OR $pass == null)
                 <input class="input-1" type="text" name="txtApellido" id="txtApellido"/>
             </p>
             <p>
-                <label class="label-1" for="apellido">T&eacute;lefono</label>
+                <label class="label-1" for="apellido">Tel&eacute;fono</label>
                 <input class="input-1" type="text" name="txtTelefono" id="txtApellido"/>
             </p>
             <div class="respuestas">
