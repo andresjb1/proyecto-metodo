@@ -6,16 +6,13 @@ if($user == null OR $pass == null)
 {
     header('Location: Login.php');
 }
-//echo "usuario:$user</br>";
-//echo "Pass:$pass";
 
 include "../../../vendor/autoload.php";
 include "../../../config/db.php";
 
-$aulas = $entityManager->getRepository(\proyecto\Entidades\Aula::class)->findAll();
+$estudiantes = $entityManager->getRepository(\proyecto\Entidades\Usuario::class)->findAll();
 
 ?>
-<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -45,9 +42,9 @@ $aulas = $entityManager->getRepository(\proyecto\Entidades\Aula::class)->findAll
             <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
             <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
-            <li class="li-1"><a href="../Estudiante/listaEstudiante.php">Estudiantes</a></li>
+            <li class="li-1"><a href="../Estudiante.php">Estudiantes</a></li>
             <li class="li-1"><a href="Profesor.php">Profesores</a></li>
-            <li class="li-1"><a href="lista.php">Aulas</a></li>
+            <li class="li-1"><a href="../aulas/lista.php">Aulas</a></li>
             <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
     </nav>
@@ -58,11 +55,11 @@ $aulas = $entityManager->getRepository(\proyecto\Entidades\Aula::class)->findAll
     <div class="row">
         <div class="col-md-12">
             <div class="pull-left">
-                <h2>Lista de aulas</h2>
+                <h2>Lista de Estudiantes</h2>
             </div>
             <div class="pull-right">
                 <div class="btn-group">
-                    <a href="registro.php" class="btn btn-primary btn-sm">Registrar aula</a>
+                    <a href="registroUsuario.php" class="btn btn-primary btn-sm">Registrar Estudiante</a>
                 </div>
             </div>
         </div>
@@ -71,27 +68,29 @@ $aulas = $entityManager->getRepository(\proyecto\Entidades\Aula::class)->findAll
         <div class="col-md-12">
             <table class="table table-hover">
                 <thead>
-                    <tr>
-                        <td>Número</td>
-                        <td>Edificio</td>
-                        <td>Capacidad</td>
-                    </tr>
+                <tr>
+                    <td>Correo</td>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Telefono</td>
+                </tr>
                 </thead>
                 <tbody>
-                    <?php if (!empty($aulas)): ?>
-                        <?php /** @var \proyecto\Entidades\Aula $aula */
-                        foreach ($aulas as $aula): ?>
-                            <tr>
-                                <td><a href="editar.php?id=<?php echo $aula->getId()?>">#<?php echo $aula->getNumero()?></a></td>
-                                <td><?php echo $aula->getEdificio()?></td>
-                                <td><?php echo $aula->getCapacidad()?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    <?php else: ?>
+                <?php if (!empty($estudiantes)): ?>
+                    <?php /** @var \proyecto\Entidades\Usuario $Estudiante */
+                    foreach ($estudiantes as $estudiante): ?>
                         <tr>
-                            <td colspan="3">No hay aulas registradas</td>
+                            <td><a href="editarEstudiante.php?id=<?php echo $estudiante->getId()?>">#<?php echo $estudiante->getCorreo()?></a></td>
+                            <td><?php echo $estudiante->getNombre()?></td>
+                            <td><?php echo $estudiante->getApellido()?></td>
+                            <td><?php echo $estudiante->getTelefono()?></td>
                         </tr>
-                    <?php endif ?>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="3">No hay estudiantes registrados</td>
+                    </tr>
+                <?php endif ?>
                 </tbody>
             </table>
         </div>
