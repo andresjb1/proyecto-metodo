@@ -16,32 +16,32 @@ if($user == null OR $pass == null)
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Estudiante</title>
-    <link rel="shortcut icon" href="../IMG/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="../Styles/HSGeneral.css" />
-    <link rel="stylesheet" href="../Styles/Fonts.css"/>
-    <link rel="stylesheet" href="../Styles/Menu.css"/>
+    <link rel="shortcut icon" href="../../IMG/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../../Styles/HSGeneral.css" />
+    <link rel="stylesheet" href="../../Styles/Fonts.css"/>
+    <link rel="stylesheet" href="../../Styles/Menu.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="CnxAdminEstudiantes.js"></script>
+    <script src="../CnxAdminEstudiantes.js"></script>
 </head>
 
 <body>
 <header>
     <div class="menu_bar">
 
-        <a href="#" class="bt-menu"><img id="logo_menu" src="../IMG/logo-latina-2015.png"/>
+        <a href="#" class="bt-menu"><img id="logo_menu" src="../../IMG/logo-latina-2015.png"/>
             <span class="icon-list"></span>
         </a>
     </div>
     <nav class="nav-1">
         <ul>
-            <li class="li-1"><img id="logo_menu_max" src="../IMG/logo-latina-2015.png"/></li>
-            <li class="li-1"><a href="HomeAdm.php"> Inicio</a></li>
-            <li class="li-1"><a href="Dispositivos.php">Dispositivos</a></li>
+            <li class="li-1"><img id="logo_menu_max" src="../../IMG/logo-latina-2015.png"/></li>
+            <li class="li-1"><a href="../HomeAdm.php"> Inicio</a></li>
+            <li class="li-1"><a href="../Dispositivos.php">Dispositivos</a></li>
             <li class="li-1"><a href="Estudiante.php">Estudiantes</a></li>
-            <li class="li-1"><a href="Profesor.php">Profesores</a></li>
-            <li class="li-1"><a href="Aula.php">Aulas</a></li>
-            <li class="li-1"><a href="../../Negocio/Cierre.php"></span>Sesión</a></li>
+            <li class="li-1"><a href="../Profesor.php">Profesores</a></li>
+            <li class="li-1"><a href="../Aula.php">Aulas</a></li>
+            <li class="li-1"><a href="../../../Negocio/Cierre.php"></span>Sesión</a></li>
         </ul>
     </nav>
 </header>
@@ -59,17 +59,25 @@ if($user == null OR $pass == null)
     </form>
 -->
     <br><br>
-    <form class="formulario-1" method="post" action="../../Negocio/registroUsuario.php">
+    <form class="formulario-1" method="post" action="registroUsuario.php">
         <?php if(isset($_GET["error"]) && $_GET['error'] == 1): ?>
-            <div class="alert alert-danger">Debe poner un carnet</div>
+            <div class="alert alert-danger">Debe poner un correo</div>
         <?php endif ?>
 
         <?php if(isset($_GET["error"]) && $_GET['error'] == 2): ?>
-            <div class="alert alert-danger">Debe poner un nombre</div>
+            <div class="alert alert-danger">Debe poner una contrasena</div>
         <?php endif ?>
 
         <?php if(isset($_GET["error"]) && $_GET['error'] == 3): ?>
+            <div class="alert alert-danger">Debe poner un nombre</div>
+        <?php endif ?>
+
+        <?php if(isset($_GET["error"]) && $_GET['error'] == 4): ?>
             <div class="alert alert-danger">Debe poner un apellido</div>
+        <?php endif ?>
+
+        <?php if(isset($_GET["error"]) && $_GET['error'] == 5): ?>
+            <div class="alert alert-danger">Debe poner un telefono</div>
         <?php endif ?>
 
         <h1>Datos</h1>
@@ -108,5 +116,5 @@ if($user == null OR $pass == null)
 
 </div><!-- wrapper -->
 </body>
-<script src="../JS/menuScript.js"></script>
+<script src="../../JS/menuScript.js"></script>
 </html>

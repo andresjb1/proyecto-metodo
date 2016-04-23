@@ -6,3 +6,9 @@ Para trajar en colaboración, deben incluir su cuenta de Github en PhpStorm desd
 2. Les van a pedir la url, ponen: https://github.com/andresjb1/proyecto-metodo.git
 
 Listo.
+
+
+##Doctrine
+Herramiento de comandos:
+
+    php vendor/doctrine/orm/bin/doctrine

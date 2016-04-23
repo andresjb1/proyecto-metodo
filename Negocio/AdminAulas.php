@@ -1,6 +1,6 @@
 <?php
-include "vendor/autoload.php";
-include "config/db.php";
+include "../vendor/autoload.php";
+include "../config/db.php";
 
     //Funciones CRUD, de primero para evitar errores al ser invocadas mas adelante.
     function createAula($numero, $edificio, $capacidad)

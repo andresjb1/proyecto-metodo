@@ -1,8 +1,10 @@
 <?php
 namespace proyecto\Entidades;
+use Doctrine\Common\Collections\ArrayCollection;
+
 /**
  * @entity
- * @table(name="Usuario")
+ * @table(name="usuario")
  */
 class Usuario {
 
@@ -46,6 +48,12 @@ class Usuario {
     protected $rol;
 
     /**
+     * ArrayCollection
+     * @OneToMany(targetEntity="Prestamo", mappedBy="usuario")
+     */
+    private $prestamos;
+
+    /**
      * Usuario constructor.
      * @param $password
      * @param $correo
@@ -62,6 +70,7 @@ class Usuario {
         $this->apellidos = $apellidos;
         $this->telefono = $telefono;
         $this->rol = $rol;
+        $this->prestamos = new ArrayCollection();
     }
 
     /**

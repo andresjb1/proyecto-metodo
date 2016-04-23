@@ -36,7 +36,7 @@ if($user == null OR $pass == null)
             <li class="li-1"><img id="logo_menu_max" src="../IMG/logo-latina-2015.png"/></li>
             <li class="li-1"><a  href="HomeAdm.php"> Inicio</a></li>
             <li class="li-1"><a  href="Dispositivos.php">Dispositivos</a></li>
-            <li class="li-1"><a  href="Estudiante.php">Estudiantes</a></li>
+            <li class="li-1"><a  href="Estudiante/Estudiante.php">Estudiantes</a></li>
             <li class="li-1"><a  href="Profesor.php">Profesores</a></li>
             <li class="li-1"><a  href="Aula.php">Aulas</a></li>
             <li class="li-1"><a  href="../../Negocio/Cierre.php"></span>Sesión</a></li>

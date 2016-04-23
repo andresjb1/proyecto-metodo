@@ -58,6 +58,7 @@ if($user == null OR $pass == null)
                 <label class="label-1"for="nombreDispo">Nombre</label>
                 <input class="input-1" type="text" name="nombreDispo" id="txtNombre"/>
             </p>
+
             <p>
                 <input class="input-1" type="submit" value="Agregar" onclick="peticionPrestamo($('#txtCodigo').val(), $('#txtNombre').val());return false;"/>
             </p>
